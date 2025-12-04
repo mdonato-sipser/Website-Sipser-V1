@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIPSER Cloud · Contacto - Agenda un Discovery</title>
+  <meta name="description" content="Contacta a SIPSER Cloud para agendar un discovery session. Diseñamos arquitecturas cloud, data, IA y ciberseguridad a medida.">
+  <meta name="keywords" content="contacto, consultoría, discovery, SIPSER Cloud, León Guanajuato">
+  <link rel="canonical" href="https://sipser.com.mx/contacto">
+  <link rel="icon" type="image/svg+xml" href="icons/Log_40_white-px.png">
+<link rel="alternate icon" type="image/x-icon" href="icons/Log_40_white-px.png">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contacto - SIPSER Cloud">
+  <meta property="og:description" content="Conecta con nuestros especialistas y diseñemos juntos tu siguiente arquitectura.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js" defer></script>
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body data-theme="light" data-page="contacto">
+  
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <p class="loader-text">SIPSER Cloud</p>
+    </div>
+  </div>
+  
+  <canvas id="cosmos"></canvas>
+  <button class="theme-toggle" aria-label="Cambiar tema"><span>☾</span></button>
+
+  <nav>
+    <a class="brand" href="index.html">
+      <img src="icons/SIPSER.png" alt="SIPSER Cloud" id="theme-logo">
+    </a>
+    <ul>
+      <li><a href="soluciones.html" data-page="soluciones">Soluciones</a></li>
+      <li><a href="adn.html" data-page="adn">ADN</a></li>
+      <li><a href="exitos.html" data-page="exitos">Éxitos</a></li>
+      <li><a href="contenido.html" data-page="contenido">Contenido</a></li>
+      <li><a href="contacto.html" data-page="contacto" class="active">Contacto</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn primary" href="https://portal.sipser.com.mx/" target="_blank" rel="noopener">🔐 Portal Cliente</a>
+    </div>
+    <button class="burger" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="page-hero page-hero--compact">
+      <div>
+        <p class="eyebrow">Conecta con nosotros</p>
+        <h1>Diseñemos juntos tu siguiente arquitectura</h1>
+        <p class="page-lede">Completa el formulario y nuestro equipo de especialistas te contactará en menos de 24 horas para agendar un discovery session sin costo.</p>
+      </div>
+      <div class="hero-metrics">
+        <article>
+          <span data-count="24" data-suffix="h">0</span>
+          <small>Respuesta garantizada</small>
+        </article>
+        <article>
+          <span data-count="45" data-suffix=" min">0</span>
+          <small>Discovery session</small>
+        </article>
+        <article>
+          <span data-count="10" data-suffix=" días">0</span>
+          <small>Blueprint personalizado</small>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section>
+      <div class="contact-grid">
+        <form class="contact-form">
+          <div>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div>
+            <label for="email">Email corporativo</label>
+            <input type="email" id="email" name="email" placeholder="tu@empresa.com" required>
+          </div>
+          <div>
+            <label for="empresa">Empresa</label>
+            <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa" required>
+          </div>
+          <div>
+            <label for="rol">Rol</label>
+            <select id="rol" name="rol" required>
+              <option value="">Selecciona tu rol</option>
+              <option value="cto">CTO / VP Engineering</option>
+              <option value="cio">CIO / Director TI</option>
+              <option value="ciso">CISO / Director Seguridad</option>
+              <option value="cdo">CDO / Director Datos</option>
+              <option value="product">Product Manager / Owner</option>
+              <option value="developer">Developer / Arquitecto</option>
+              <option value="other">Otro</option>
+            </select>
+          </div>
+          <div>
+            <label for="interes">¿Qué te interesa explorar?</label>
+            <select id="interes" name="interes" required>
+              <option value="">Selecciona un área</option>
+              <option value="cloud">Cloud Kinetic · Modernización</option>
+              <option value="data">Data + AI Continuum</option>
+              <option value="security">Cybertrust 24/7</option>
+              <option value="digital">Digital Venues</option>
+              <option value="discovery">Discovery general</option>
+            </select>
+          </div>
+          <div>
+            <label for="mensaje">Cuéntanos sobre tu iniciativa</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Describe brevemente tu proyecto o reto actual..." rows="5"></textarea>
+          </div>
+          <button class="btn primary" type="submit">Enviar solicitud</button>
+        </form>
+        
+        <div>
+          <div class="card" style="margin-bottom: 24px;">
+            <h3>📍 Oficina León</h3>
+            <p style="color: var(--muted); margin-bottom: 12px;">Blvd. Adolfo López Mateos 1102<br>Col. Los Gavilanes, León, Gto.<br>CP 37270</p>
+            <p style="color: var(--muted);">📞 +52 477 123 4567</p>
+          </div>
+          
+          <div class="card" style="margin-bottom: 24px;">
+            <h3>📍 Oficina CDMX</h3>
+            <p style="color: var(--muted); margin-bottom: 12px;">Av. Paseo de la Reforma 296<br>Col. Juárez, CDMX<br>CP 06600</p>
+            <p style="color: var(--muted);">📞 +52 55 1234 5678</p>
+          </div>
+          
+          <div class="card">
+            <h3>💬 Canales directos</h3>
+            <p style="color: var(--muted); margin-bottom: 16px;">Prefiere chat o llamada rápida:</p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+              <a class="btn primary" href="https://wa.me/5215555555555" target="_blank" rel="noreferrer">WhatsApp</a>
+              <a class="btn ghost" href="/cdn-cgi/l/email-protection#f991969598b98a90898a9c8bd79a9694d79481">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+      <div class="section-header">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2>Lo que más nos preguntan</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>¿Qué incluye el discovery session?</h3>
+          <p>Una llamada de 45 minutos con especialistas donde exploramos tu contexto, identificamos oportunidades y definimos siguientes pasos. Sin costo ni compromiso.</p>
+        </article>
+        <article class="card">
+          <h3>¿Cuánto toma un proyecto típico?</h3>
+          <p>Depende del alcance. Un piloto puede estar listo en 6 semanas. Una plataforma industrializada típicamente toma 90 días con nuestros squads dedicados.</p>
+        </article>
+        <article class="card">
+          <h3>¿Trabajan con empresas pequeñas?</h3>
+          <p>Sí. Tenemos programas de launch week para startups y scaleups, además de engagement enterprise para corporativos.</p>
+        </article>
+        <article class="card">
+          <h3>¿En qué nubes trabajan?</h3>
+          <p>Principalmente AWS, Azure y Google Cloud. También apoyamos ambientes híbridos y multi-cloud con gobernanza unificada.</p>
+        </article>
+        <article class="card">
+          <h3>¿Tienen certificaciones?</h3>
+          <p>Somos AWS Advanced Partner, Azure Solutions Partner y contamos con certificaciones en seguridad, datos e IA de múltiples vendors.</p>
+        </article>
+        <article class="card">
+          <h3>¿Cómo es el modelo de pricing?</h3>
+          <p>Ofrecemos modelos por proyecto, retainer mensual y outcome-based según las necesidades. Lo definimos juntos en el discovery.</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>
+      <p>SIPSER Cloud · Arquitecturas que rompen la inercia</p>
+      <small>León · CDMX · Monterrey · Guadalajara · Austin</small>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="soluciones.html" data-page="soluciones">Soluciones</a></li>
+        <li><a href="adn.html" data-page="adn">ADN</a></li>
+        <li><a href="exitos.html" data-page="exitos">Éxitos</a></li>
+        <li><a href="contenido.html" data-page="contenido">Contenido</a></li>
+        <li><a href="contacto.html" data-page="contacto" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+    <small>© <span id="year"></span> SIPSER Cloud. Todos los derechos reservados.</small>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="main.js" defer></script>
+  <!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/5215555555555" 
+class="whatsapp-float" 
+target="_blank" 
+rel="noopener"
+aria-label="Chat por WhatsApp">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+ <path d="M12 2C6.48 2 2 6.48 2 12C2 14.9 3.2 17.43 5.11 19.27L4.5 21.5L6.73 20.89C8.57 22.8 11.1 24 14 24C19.52 24 24 19.52 24 14C24 8.48 19.52 4 14 4H12V2ZM7.6 17.11C7.06 16.57 7.06 15.63 7.6 15.09L9.22 13.47C9.76 12.93 10.7 12.93 11.24 13.47L12.86 15.09C13.4 15.63 13.4 16.57 12.86 17.11L11.24 18.73C10.7 19.27 9.76 19.27 9.22 18.73L7.6 17.11ZM16.38 10.88C16.92 11.42 16.92 12.36 16.38 12.9L14.76 14.52C14.22 15.06 13.28 15.06 12.74 14.52

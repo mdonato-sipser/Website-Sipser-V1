@@ -1,0 +1,14 @@
+{
+  "titulo": "Machine Learning",
+  "icono": "🤖",
+  "descripcion": "Servicios de consultoría que transforman datos en insights accionables para tu negocio.",
+  "caracteristicas": [
+    "Modelos predictivos",
+    "Análisis de patrones",
+    "Automatización inteligente",
+    "Optimización de procesos"
+  ],
+  "contenido_modal": "## Machine Learning\n\nImplementa modelos de ML que generen valor real para tu negocio.\n\n### ¿Qué incluye?\n\n- **Exploración**: Análisis de datos y definición de casos de uso\n- **Desarrollo**: Entrenamiento y validación de modelos\n- **Deployment**: Puesta en producción escalable\n- **MLOps**: Monitoreo y reentrenamiento continuo\n\n### Casos de uso comunes\n\n- Predicción de demanda e inventarios\n- Detección de fraude\n- Segmentación de clientes\n- Mantenimiento predictivo\n- Análisis de sentimiento",
+  "orden": 4,
+  "activo": true
+}

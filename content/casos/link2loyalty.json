@@ -1,0 +1,30 @@
+{
+  "cliente": "Link2Loyalty",
+  "logo": "/assets/link2loyalty.png",
+  "badge": "BUSINESS INTELLIGENCE",
+  "impacto": "alto",
+  "descripcion": "Implementación de arquitectura cloud con 89.89% de uptime y sistema de business intelligence en tiempo real.",
+  "metricas": [
+    {
+      "icono": "⚡",
+      "valor": "89.89%",
+      "etiqueta": "UPTIME"
+    },
+    {
+      "icono": "💰",
+      "valor": "40%",
+      "etiqueta": "AHORRO COSTOS"
+    }
+  ],
+  "reto": "Link2Loyalty necesitaba una infraestructura cloud robusta que pudiera manejar picos de tráfico durante campañas de lealtad, mientras mantenía costos controlados y visibilidad en tiempo real de sus operaciones.",
+  "solucion": "Implementamos una arquitectura serverless en AWS con auto-scaling, junto con un sistema de Business Intelligence que permite monitorear KPIs en tiempo real.\n\nLa solución incluye:\n- Lambda functions para procesamiento\n- RDS para persistencia\n- QuickSight para dashboards\n- CloudWatch para monitoreo 24/7",
+  "resultados": [
+    "Reducción del 40% en costos de infraestructura",
+    "Uptime del 89.89% garantizado",
+    "Dashboards en tiempo real para toma de decisiones",
+    "Escalabilidad automática durante picos de demanda"
+  ],
+  "video_url": "",
+  "destacado": true,
+  "orden": 1
+}

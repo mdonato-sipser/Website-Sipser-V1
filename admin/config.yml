@@ -1,0 +1,257 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
+
+locale: 'es'
+
+# =====================================================
+# COLECCIONES
+# =====================================================
+
+collections:
+
+  # ═══════════════════════════════════════════════════
+  # 📰 NOTICIAS
+  # ═══════════════════════════════════════════════════
+  - name: "noticias"
+    label: "📰 Noticias"
+    folder: "content/noticias"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "titulo"
+    fields:
+      - {label: "Título", name: "titulo", widget: "string"}
+      - label: "Categoría"
+        name: "categoria"
+        widget: "select"
+        options: ["ia", "cloud", "seguridad", "optimizacion", "data"]
+      - {label: "Descripción corta", name: "descripcion", widget: "text"}
+      - {label: "Contenido completo", name: "contenido", widget: "markdown"}
+      - {label: "Imagen", name: "imagen", widget: "image", required: false}
+      - {label: "Fecha", name: "fecha", widget: "datetime"}
+      - {label: "Tiempo de lectura", name: "tiempo_lectura", widget: "string", default: "5 min"}
+      - {label: "Autor", name: "autor", widget: "string"}
+      - {label: "Cargo", name: "cargo", widget: "string"}
+      - label: "Puntos clave"
+        name: "puntos_clave"
+        widget: "list"
+        field: {label: "Punto", name: "punto", widget: "string"}
+      - {label: "Publicado", name: "publicado", widget: "boolean", default: true}
+
+  # ═══════════════════════════════════════════════════
+  # 🎙️ PODCASTS
+  # ═══════════════════════════════════════════════════
+  - name: "podcasts"
+    label: "🎙️ Podcasts"
+    folder: "content/podcasts"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "titulo"
+    fields:
+      - {label: "Título", name: "titulo", widget: "string"}
+      - label: "Categoría"
+        name: "categoria"
+        widget: "select"
+        options: ["ml", "infra", "genai", "data", "migracion"]
+      - {label: "Descripción", name: "descripcion", widget: "text"}
+      - {label: "Episodio", name: "episodio", widget: "string"}
+      - {label: "Duración", name: "duracion", widget: "string"}
+      - {label: "Fecha", name: "fecha", widget: "datetime"}
+      - {label: "Imagen", name: "imagen", widget: "image", required: false}
+      - {label: "URL Audio", name: "audio_url", widget: "string", required: false}
+      - {label: "URL Spotify", name: "spotify_url", widget: "string", required: false}
+      - {label: "Publicado", name: "publicado", widget: "boolean", default: true}
+
+  # ═══════════════════════════════════════════════════
+  # 🏆 CASOS DE ÉXITO
+  # ═══════════════════════════════════════════════════
+  - name: "casos"
+    label: "🏆 Casos de Éxito"
+    folder: "content/casos"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "cliente"
+    fields:
+      - {label: "Cliente", name: "cliente", widget: "string"}
+      - {label: "Logo", name: "logo", widget: "image"}
+      - {label: "Badge", name: "badge", widget: "string"}
+      - label: "Tipo de impacto"
+        name: "impacto"
+        widget: "select"
+        options:
+          - {label: "🔥 Alto Impacto", value: "alto"}
+          - {label: "🛡️ Seguridad", value: "seguridad"}
+          - {label: "📈 Crecimiento", value: "crecimiento"}
+          - {label: "🤖 IA", value: "ia"}
+      - {label: "Descripción", name: "descripcion", widget: "text"}
+      - label: "Métricas"
+        name: "metricas"
+        widget: "list"
+        max: 2
+        fields:
+          - {label: "Icono", name: "icono", widget: "string"}
+          - {label: "Valor", name: "valor", widget: "string"}
+          - {label: "Etiqueta", name: "etiqueta", widget: "string"}
+      - {label: "Reto", name: "reto", widget: "markdown"}
+      - {label: "Solución", name: "solucion", widget: "markdown"}
+      - label: "Resultados"
+        name: "resultados"
+        widget: "list"
+        field: {label: "Resultado", name: "resultado", widget: "string"}
+      - {label: "Video URL", name: "video_url", widget: "string", required: false}
+      - {label: "Destacado", name: "destacado", widget: "boolean", default: false}
+      - {label: "Orden", name: "orden", widget: "number", default: 0}
+
+  # ═══════════════════════════════════════════════════
+  # 📅 EVENTOS Y WEBINARS
+  # ═══════════════════════════════════════════════════
+  - name: "eventos"
+    label: "📅 Eventos y Webinars"
+    folder: "content/eventos"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "titulo"
+    fields:
+      - {label: "Título", name: "titulo", widget: "string"}
+      - label: "Tipo"
+        name: "tipo"
+        widget: "select"
+        options: ["Webinar", "Workshop", "Meetup", "Conferencia"]
+      - label: "Color"
+        name: "color"
+        widget: "select"
+        options: ["cyan", "violet", "pink"]
+      - {label: "Descripción", name: "descripcion", widget: "text"}
+      - {label: "Fecha", name: "fecha", widget: "datetime"}
+      - {label: "Link registro", name: "link", widget: "string"}
+      - {label: "Activo", name: "activo", widget: "boolean", default: true}
+
+  # ═══════════════════════════════════════════════════
+  # 📚 PLAYBOOKS Y RECURSOS
+  # ═══════════════════════════════════════════════════
+  - name: "playbooks"
+    label: "📚 Playbooks y Recursos"
+    folder: "content/playbooks"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "titulo"
+    fields:
+      - {label: "Título", name: "titulo", widget: "string"}
+      - label: "Tipo"
+        name: "tipo"
+        widget: "select"
+        options: ["Playbook", "Kit", "Template", "Guía", "Checklist"]
+      - {label: "Descripción", name: "descripcion", widget: "text"}
+      - {label: "Archivo", name: "archivo", widget: "file", required: false}
+      - {label: "Link", name: "link", widget: "string", required: false}
+      - label: "Estilo botón"
+        name: "btn_estilo"
+        widget: "select"
+        options: ["primary", "ghost"]
+      - {label: "Texto botón", name: "btn_texto", widget: "string", default: "Descargar"}
+      - {label: "Orden", name: "orden", widget: "number", default: 0}
+
+  # ═══════════════════════════════════════════════════
+  # 💼 SOLUCIONES
+  # ═══════════════════════════════════════════════════
+  - name: "soluciones"
+    label: "💼 Soluciones"
+    folder: "content/soluciones"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "titulo"
+    fields:
+      - {label: "Título", name: "titulo", widget: "string"}
+      - {label: "Icono (emoji)", name: "icono", widget: "string"}
+      - {label: "Descripción", name: "descripcion", widget: "text"}
+      - label: "Características"
+        name: "caracteristicas"
+        widget: "list"
+        field: {label: "Característica", name: "caracteristica", widget: "string"}
+      - {label: "Contenido del modal", name: "contenido_modal", widget: "markdown"}
+      - {label: "Orden", name: "orden", widget: "number", default: 0}
+      - {label: "Activo", name: "activo", widget: "boolean", default: true}
+
+  # ═══════════════════════════════════════════════════
+  # 🖼️ LOGOS DE CLIENTES
+  # ═══════════════════════════════════════════════════
+  - name: "logos_clientes"
+    label: "🖼️ Logos de Clientes"
+    folder: "content/logos-clientes"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "nombre"
+    fields:
+      - {label: "Nombre", name: "nombre", widget: "string"}
+      - {label: "Logo", name: "logo", widget: "image"}
+      - {label: "Orden", name: "orden", widget: "number", default: 0}
+      - {label: "Mostrar en home", name: "mostrar_home", widget: "boolean", default: true}
+
+  # ═══════════════════════════════════════════════════
+  # 🏅 CERTIFICACIONES
+  # ═══════════════════════════════════════════════════
+  - name: "certificaciones"
+    label: "🏅 Certificaciones"
+    folder: "content/certificaciones"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "nombre"
+    fields:
+      - {label: "Nombre", name: "nombre", widget: "string"}
+      - {label: "Imagen", name: "imagen", widget: "image"}
+      - {label: "Orden", name: "orden", widget: "number", default: 0}
+
+  # ═══════════════════════════════════════════════════
+  # ⚙️ CONFIGURACIÓN GLOBAL
+  # ═══════════════════════════════════════════════════
+  - name: "configuracion"
+    label: "⚙️ Configuración"
+    files:
+      - name: "config_global"
+        label: "Configuración del Sitio"
+        file: "content/config.json"
+        fields:
+          - label: "WhatsApp"
+            name: "whatsapp"
+            widget: "object"
+            fields:
+              - {label: "Número", name: "numero", widget: "string"}
+              - {label: "Mostrar botón", name: "mostrar", widget: "boolean", default: true}
+          - label: "Portal Cliente"
+            name: "portal"
+            widget: "object"
+            fields:
+              - {label: "URL", name: "url", widget: "string"}
+              - {label: "Texto del botón", name: "texto", widget: "string"}
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - {label: "Tagline", name: "tagline", widget: "string"}
+              - {label: "Ciudades", name: "ciudades", widget: "string"}
+          - label: "Redes Sociales"
+            name: "redes"
+            widget: "object"
+            fields:
+              - {label: "LinkedIn", name: "linkedin", widget: "string", required: false}
+              - {label: "Twitter", name: "twitter", widget: "string", required: false}
+              - {label: "YouTube", name: "youtube", widget: "string", required: false}

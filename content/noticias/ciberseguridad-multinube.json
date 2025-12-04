@@ -1,0 +1,18 @@
+{
+  "titulo": "Estrategias de ciberseguridad para entornos multi-nube",
+  "categoria": "seguridad",
+  "descripcion": "Guía práctica para implementar políticas de seguridad robustas en infraestructuras que utilizan múltiples proveedores cloud.",
+  "contenido": "Con el 85% de las empresas utilizando múltiples proveedores cloud, la seguridad multi-nube se ha convertido en una prioridad crítica.\n\n## Desafíos principales\n\n- Gobernanza inconsistente entre proveedores\n- Visibilidad limitada de amenazas\n- Complejidad en la gestión de identidades\n- Cumplimiento normativo fragmentado\n\n## Estrategias efectivas\n\n### 1. Zero Trust Architecture\nImplementa verificación continua de identidad y dispositivos, independientemente de la ubicación.\n\n### 2. CSPM (Cloud Security Posture Management)\nUsa herramientas automatizadas para monitorear y corregir configuraciones inseguras.\n\n### 3. SIEM Unificado\nCentraliza logs y eventos de seguridad de todos los proveedores cloud.\n\n### 4. Gestión Centralizada de Identidades\nImplementa SSO y MFA consistentes en todas las plataformas.\n\n### 5. Auditorías Automatizadas\nAutomatiza pruebas de cumplimiento y auditorías de seguridad.",
+  "imagen": "/img/noticias/seguridad-multicloud.jpg",
+  "fecha": "2024-03-05T10:00:00.000Z",
+  "tiempo_lectura": "6 min lectura",
+  "autor": "María González",
+  "cargo": "CISO",
+  "puntos_clave": [
+    "85% de empresas usan multi-cloud",
+    "Zero Trust es esencial",
+    "CSPM reduce riesgos en 70%",
+    "SIEM unificado mejora detección"
+  ],
+  "publicado": true
+}

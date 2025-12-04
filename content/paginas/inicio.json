@@ -1,0 +1,136 @@
+{
+  "hero": {
+    "eyebrow": "Soluciones que entienden tu empresa",
+    "titulo": "Diseñamos experiencias cloud para organizaciones que lideran mercados",
+    "subtitulo": "Infraestructura, analítica y automatización trabajando juntas como un solo sistema.",
+    "btn_primario_texto": "Explorar soluciones",
+    "btn_primario_link": "soluciones.html",
+    "btn_secundario_texto": "Ver casos de éxito",
+    "btn_secundario_link": "exitos.html"
+  },
+  "orbe": {
+    "tag": "Live telemetry",
+    "titulo": "Pods conectados en tiempo real",
+    "descripcion": "Squads cloud, data e IA con tableros compartidos y rituales en vivo.",
+    "stat1_numero": "+18",
+    "stat1_texto": "Pods activos",
+    "stat2_numero": "47%",
+    "stat2_texto": "valor acelerado"
+  },
+  "news_section": {
+    "eyebrow": "News & Insights",
+    "titulo": "Lo último desde nuestros programas y laboratorios"
+  },
+  "badges_section": {
+    "eyebrow": "NUESTRA EXPERIENCIA",
+    "titulo": "Acompañamos con un equipo certificado",
+    "descripcion": "Certificaciones en servicios de nube, datos e inteligencia artificial de AWS, listos para llevar sus proyectos al siguiente nivel."
+  },
+  "clientes_section": {
+    "eyebrow": "NUESTROS CLIENTES",
+    "titulo": "Empresas que han confiado en SIPSER CLOUD",
+    "descripcion": "Acompañamos a organizaciones de distintas industrias a migrar, operar y evolucionar sus entornos en la nube con soluciones a la medida."
+  },
+  "meta_section": {
+    "eyebrow": "NUESTRA META",
+    "titulo": "Convertirnos en tu aliado estratégico",
+    "descripcion": "Con más de 10 años de experiencia ayudamos a las empresas a tomar decisiones basadas en datos, infraestructura confiable y automatización inteligente.",
+    "soluciones_aws": [
+      {
+        "titulo": "Windows en AWS",
+        "descripcion": "Migra tus cargas Microsoft a una infraestructura flexible, segura y con pago por uso.",
+        "icono": "icons/Windows_AWZ.png",
+        "link": "https://sipser.com.mx/Mkt/LandinPage/index-aws.html"
+      },
+      {
+        "titulo": "AWS Glue",
+        "descripcion": "Limpia, transforma y prepara tus datos para análisis de manera automatizada.",
+        "icono": "icons/Amazon_Glue.png",
+        "link": "https://sipser.com.mx/Mkt/LandingPage3/index.html"
+      },
+      {
+        "titulo": "Amazon RDS",
+        "descripcion": "Administra tus bases de datos sin fricción, con alta disponibilidad y respaldo automatizado.",
+        "icono": "icons/Amazon_RDS.png",
+        "link": "https://sipser.com.mx/Mkt/LandinPage2/index-AmazonRDS.html"
+      },
+      {
+        "titulo": "Amazon QuickSight",
+        "descripcion": "Crea dashboards interactivos y comparte insights con toda la organización.",
+        "icono": "icons/Windows_Quicksight.png",
+        "link": "https://sipser.com.mx/Mkt/LandingPage4/index.html"
+      }
+    ]
+  },
+  "evoluciona_section": {
+    "titulo": "EVOLUCIONA CON LAS NUEVAS TECNOLOGÍAS",
+    "subtitulo": "Te acompañamos en cada etapa para acelerar tu transformación digital.",
+    "features": [
+      {
+        "titulo": "Impulso a tu competitividad",
+        "descripcion": "Convertimos tecnología en una ventaja real.",
+        "icono": "icons/flecha-hacia-arriba.png"
+      },
+      {
+        "titulo": "Visión estratégica",
+        "descripcion": "Transformamos datos en decisiones inteligentes.",
+        "icono": "icons/analitica.png"
+      },
+      {
+        "titulo": "Optimización de costos",
+        "descripcion": "Haz más con menos, manteniendo calidad y escala.",
+        "icono": "icons/presupuesto.png"
+      },
+      {
+        "titulo": "Eficiencia y productividad",
+        "descripcion": "Automatizamos procesos clave de tu operación.",
+        "icono": "icons/automatizacion.png"
+      }
+    ]
+  },
+  "experiencia_section": {
+    "eyebrow": "Experiencia inmersiva",
+    "titulo": "Programas que combinan estrategia, producto y operación",
+    "programas": [
+      {
+        "titulo": "Launch Weeks",
+        "descripcion": "Sesiones ejecutivas + squads tácticos para llevar ideas a piloto en 2 semanas.",
+        "color": "cyan",
+        "items": [
+          "Blueprint funcional",
+          "KPIs compartidos",
+          "Roadmap de adopción"
+        ]
+      },
+      {
+        "titulo": "Industry Pods",
+        "descripcion": "Equipos dedicados por industria con rituales y tableros hechos a medida.",
+        "color": "violet",
+        "items": [
+          "Retail, financiero, salud, gobierno",
+          "Telemetría omnicanal",
+          "FinOps neuro adaptativo"
+        ]
+      },
+      {
+        "titulo": "TrustOps Lab",
+        "descripcion": "Simulaciones purple team, respuesta autónoma y cumplimiento continuo.",
+        "color": "pink",
+        "items": [
+          "Zero trust dinámico",
+          "Detección + orquestación",
+          "Runbooks inteligentes"
+        ]
+      }
+    ]
+  },
+  "cta_final": {
+    "eyebrow": "¿Listo para comenzar?",
+    "titulo": "Active un Discovery Session y diseñemos el siguiente salto",
+    "descripcion": "Blueprint personalizado, assessment FinOps y propuesta de laboratorio generativo sin costo inicial.",
+    "btn1_texto": "Agenda discovery",
+    "btn1_link": "contacto.html",
+    "btn2_texto": "Explorar contenido",
+    "btn2_link": "contenido.html"
+  }
+}

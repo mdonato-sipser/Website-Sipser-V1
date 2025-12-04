@@ -1,0 +1,14 @@
+{
+  "titulo": "Business Intelligence",
+  "icono": "📈",
+  "descripcion": "Transforma tus datos en decisiones estratégicas con dashboards y reportes avanzados.",
+  "caracteristicas": [
+    "Dashboards interactivos",
+    "Reportes automatizados",
+    "Análisis en tiempo real",
+    "Métricas de negocio"
+  ],
+  "contenido_modal": "## Business Intelligence\n\nConvierte datos en decisiones con visualizaciones poderosas y accesibles.\n\n### ¿Qué incluye?\n\n- **Diseño de KPIs**: Definición de métricas clave\n- **Dashboards**: Visualizaciones interactivas\n- **Reportes**: Automatización de informes\n- **Self-service BI**: Capacitación a usuarios\n\n### Herramientas\n\n- Amazon QuickSight\n- Power BI\n- Tableau\n- Looker/Metabase\n\n### Beneficios\n\n- Decisiones basadas en datos\n- Visibilidad en tiempo real\n- Democratización del acceso a información\n- Reducción de tiempo en generación de reportes",
+  "orden": 6,
+  "activo": true
+}

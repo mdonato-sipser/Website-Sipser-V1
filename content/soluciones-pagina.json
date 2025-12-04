@@ -1,0 +1,17 @@
+{
+  "hero": {
+    "eyebrow": "Soluciones cloud, data, IA y ciberseguridad",
+    "titulo": "Arquitecturas listas para operar en semanas, no en años",
+    "subtitulo": "Combinamos blueprint de plataforma, squads especializados y telemetría continua para modernizar cargas de trabajo, activar datos explotables y asegurar el negocio 24/7."
+  },
+  "seccion_soluciones": {
+    "eyebrow": "Soluciones SIPSER Cloud",
+    "titulo": "Soluciones que conectan todo tu universo cloud",
+    "descripcion": "Integramos servicios de nube, datos y automatización para cubrir desde la operación diaria hasta la estrategia de negocio, con un enfoque en seguridad, escalabilidad y optimización de costos."
+  },
+  "seccion_proposito": {
+    "eyebrow": "Nuestra filosofía",
+    "titulo": "Creemos soluciones con propósito",
+    "descripcion": "En cada proyecto integramos tecnología, estrategia y acompañamiento para que la nube se convierta en un habilitador real de tu negocio."
+  }
+}

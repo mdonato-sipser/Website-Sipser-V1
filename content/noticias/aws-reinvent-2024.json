@@ -1,0 +1,18 @@
+{
+  "titulo": "Lo más destacado de AWS re:Invent 2024",
+  "categoria": "cloud",
+  "descripcion": "Resumen de los anuncios más importantes y cómo impactarán en las estrategias de migración y transformación digital.",
+  "contenido": "Amazon Web Services presentó más de 20 nuevas características y servicios en su conferencia anual reinvent 2024, enfocándose en IA, sostenibilidad y optimización de costos.\n\n## Novedades principales\n\n- **AWS AI Canvas:** Herramienta de diseño visual para modelos de IA\n- **Amazon Q:** Asistente de IA empresarial mejorado\n- **Graviton4:** Procesadores con 40% mejor rendimiento\n- **Zero-ETL Analytics:** Integración sin ETL entre servicios\n\n## Impacto en estrategias cloud\n\nEstas innovaciones permitirán a las empresas:\n- Reducir costos de infraestructura hasta en un 35%\n- Acelerar migraciones a la nube en un 50%\n- Implementar soluciones de IA en semanas en lugar de meses\n- Cumplir con regulaciones de sostenibilidad más fácilmente",
+  "imagen": "/img/noticias/aws-reinvent.jpg",
+  "fecha": "2024-03-10T10:00:00.000Z",
+  "tiempo_lectura": "7 min lectura",
+  "autor": "Carlos Rodríguez",
+  "cargo": "AWS Solutions Architect",
+  "puntos_clave": [
+    "20+ nuevas características anunciadas",
+    "Ahorro potencial del 35% en costos",
+    "50% más rápido en migraciones",
+    "Graviton4: 40% mejor rendimiento"
+  ],
+  "publicado": true
+}

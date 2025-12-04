@@ -1,0 +1,138 @@
+{
+  "hero": {
+    "eyebrow": "Soluciones cloud, data, IA y ciberseguridad",
+    "titulo": "Arquitecturas listas para operar en semanas, no en años",
+    "subtitulo": "Combinamos blueprint de plataforma, squads especializados y telemetría continua para modernizar cargas de trabajo, activar datos explotables y asegurar el negocio 24/7.",
+    "btn_primario": "Diseñar mi iniciativa",
+    "btn_secundario": "Ver casos reales",
+    "signal_tags": [
+      "Landing Zones vivas",
+      "Data Fabric continuo",
+      "Edge AI Fabric"
+    ]
+  },
+  "soluciones": {
+    "eyebrow": "Soluciones SIPSER Cloud",
+    "titulo": "Soluciones que conectan todo tu universo cloud",
+    "descripcion": "Integramos servicios de nube, datos y automatización para cubrir desde la operación diaria hasta la estrategia de negocio, con un enfoque en seguridad, escalabilidad y optimización de costos.",
+    "tarjetas": [
+      {
+        "icono": "☁️",
+        "titulo": "Migración a la Nube",
+        "descripcion": "Lleva tu información de forma segura y escalable a la nube para optimizar tu operación.",
+        "caracteristicas": [
+          "Migración segura de entornos sin premisas",
+          "Escalabilidad automática",
+          "Optimización de costos",
+          "Alta disponibilidad"
+        ]
+      },
+      {
+        "icono": "🔄",
+        "titulo": "Continuidad de Negocio",
+        "descripcion": "Garantiza la operación continua con recuperación ante desastres y alta disponibilidad.",
+        "caracteristicas": [
+          "Recuperación ante desastres",
+          "Backup y restauración",
+          "Alta disponibilidad",
+          "Planes de contingencia"
+        ]
+      },
+      {
+        "icono": "📊",
+        "titulo": "Ingeniería de Datos",
+        "descripcion": "Convierte datos en ciencia. Crea procedimientos únicos para decisiones informadas.",
+        "caracteristicas": [
+          "Pipeline de datos automatizado",
+          "Análisis predictivo",
+          "Integración de fuentes múltiples",
+          "Dashboards interactivos"
+        ]
+      },
+      {
+        "icono": "🤖",
+        "titulo": "Machine Learning",
+        "descripcion": "Servicios de consultoría que transforman datos en insights accionables para tu negocio.",
+        "caracteristicas": [
+          "Modelos predictivos",
+          "Análisis de patrones",
+          "Automatización inteligente",
+          "Optimización de procesos"
+        ]
+      },
+      {
+        "icono": "🛡️",
+        "titulo": "Infraestructura Cloud",
+        "descripcion": "Entornos tangibles, seguros y analíticos. Comunicación robusta con información clave.",
+        "caracteristicas": [
+          "Arquitectura cloud nativa",
+          "Seguridad empresarial",
+          "Monitoreo 24/7",
+          "Backup automático"
+        ]
+      },
+      {
+        "icono": "📈",
+        "titulo": "Business Intelligence",
+        "descripcion": "Transforma tus datos en decisiones estratégicas con dashboards y reportes avanzados.",
+        "caracteristicas": [
+          "Dashboards interactivos",
+          "Reportes automatizados",
+          "Análisis en tiempo real",
+          "Métricas de negocio"
+        ]
+      }
+    ]
+  },
+  "proposito": {
+    "eyebrow": "Nuestra filosofía",
+    "titulo": "Creemos soluciones con propósito",
+    "descripcion": "En cada proyecto integramos tecnología, estrategia y acompañamiento para que la nube se convierta en un habilitador real de tu negocio.",
+    "tarjetas": [
+      {
+        "icono": "⚡",
+        "titulo": "Optimizar tu operación",
+        "descripcion": "Reduciendo tiempos, errores y retrabajos con procesos automatizados y visibilidad en tiempo real.",
+        "features": [
+          "Automatización inteligente",
+          "Monitoreo proactivo",
+          "Workflows optimizados",
+          "Reducción de costos operativos"
+        ]
+      },
+      {
+        "icono": "🛡️",
+        "titulo": "Proteger lo que importa",
+        "descripcion": "Diseñando arquitecturas resilientes y seguras que cuidan tu información y la continuidad del negocio.",
+        "features": [
+          "Seguridad Zero Trust",
+          "Backup y recuperación",
+          "Cumplimiento normativo",
+          "Protección de datos"
+        ]
+      },
+      {
+        "icono": "📊",
+        "titulo": "Tomar decisiones con claridad",
+        "descripcion": "Con datos consolidados, modelos analíticos y tableros estratégicos para todos los niveles de la organización.",
+        "features": [
+          "Business Intelligence",
+          "Analytics en tiempo real",
+          "Dashboards ejecutivos",
+          "Predictive analytics"
+        ]
+      }
+    ]
+  },
+  "cta_proposito": {
+    "titulo": "¿Listo para transformar tu negocio con propósito?",
+    "descripcion": "Hablemos sobre cómo podemos optimizar, proteger y potenciar tu operación con soluciones cloud diseñadas específicamente para ti.",
+    "btn_texto": "Quiero saber más de esta solución",
+    "nota": "Primera consulta estratégica gratuita"
+  },
+  "partners": {
+    "eyebrow": "Confían en nosotros",
+    "titulo": "Organizaciones reguladas y de alto crecimiento",
+    "descripcion": "Retail, financiero, salud, manufactura, gobierno y scaleups impulsan sus operaciones con nuestras arquitecturas."
+  }
+}

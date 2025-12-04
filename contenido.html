@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIPSER Cloud · Contenido - Recursos, Playbooks y Podcasts</title>
+  <meta name="description" content="Recursos, episodios y frameworks creados por SIPSER Cloud para acelerar la innovación. Playbooks, guías, podcasts y templates.">
+  <meta name="keywords" content="playbooks, recursos, frameworks, podcasts, guías, templates, cloud, data, IA">
+  <link rel="canonical" href="https://sipser.com.mx/contenido">
+  <link rel="icon" type="image/svg+xml" href="icons/Log_40_white-px.png">
+<link rel="alternate icon" type="image/x-icon" href="icons/Log_40_white-px.png">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contenido - SIPSER Cloud">
+  <meta property="og:description" content="Frameworks, episodios y playbooks listos para accionar.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js" defer></script>
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body data-theme="light" data-page="contenido">
+  
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <p class="loader-text">SIPSER Cloud</p>
+    </div>
+  </div>
+  
+  <canvas id="cosmos"></canvas>
+  <button class="theme-toggle" aria-label="Cambiar tema"><span>☾</span></button>
+
+  <nav>
+    <a class="brand" href="index.html">
+      <img src="icons/SIPSER.png" alt="SIPSER Cloud" id="theme-logo">
+    </a>
+    <ul>
+      <li><a href="soluciones.html" data-page="soluciones">Soluciones</a></li>
+      <li><a href="adn.html" data-page="adn">ADN</a></li>
+      <li><a href="exitos.html" data-page="exitos">Éxitos</a></li>
+      <li><a href="contenido.html" data-page="contenido" class="active">Contenido</a></li>
+      <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn primary" href="https://portal.sipser.com.mx/" target="_blank" rel="noopener">🔐 Portal Cliente</a>
+    </div>
+    <button class="burger" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="page-hero page-hero--compact">
+      <div>
+        <p class="eyebrow">Knowledge Hub</p>
+        <h1>Frameworks, episodios y playbooks listos para accionar</h1>
+        <p class="page-lede">Curamos contenido creado junto a clientes y comunidades para acelerar tus iniciativas cloud, datos e IA.</p>
+      </div>
+      <!-- Hero Visual - 3D Orb -->
+      <div class="home-hero-visual" data-hero-orb>
+        <div class="home-orb-overlay">
+          <img src="icons/SIPSER.png" alt="Ecosistema SIPSER" class="hero-logo" id="hero-logo">
+          <span class="orb-tag">Live telemetry</span>
+          <h3>Pods conectados en tiempo real</h3>
+          <p>Squads cloud, data e IA con tableros compartidos y rituales en vivo.</p>
+          <div class="orb-stats">
+            <div>
+              <strong>+18</strong>
+              <small>Pods activos</small>
+            </div>
+            <div>
+              <strong>47%</strong>
+              <small>valor acelerado</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+<!-- CONTENIDO: NOTICIAS Y PODCASTS -->
+<section>
+  <div class="section-header">
+      <p class="eyebrow">Knowledge Hub</p>
+      <h2>Contenido exclusivo para acelerar tu transformación</h2>
+      <p class="section-subtitle">Selecciona el tipo de contenido que quieres explorar</p>
+  </div>
+  
+  <!-- Pestañas de navegación -->
+  <div class="content-tabs">
+      <button class="content-tab active" data-tab="news">
+          📰 Últimas Noticias
+          <span class="tab-count" id="newsCount">0</span>
+      </button>
+      <button class="content-tab" data-tab="podcasts">
+          🎙️ Podcasts SIPSER Cloud
+          <span class="tab-count" id="podcastsCount">0</span>
+      </button>
+  </div>
+  
+  <!-- Contenedor de contenido dinámico -->
+  <div class="content-container">
+      <!-- Sección de Noticias (visible por defecto) -->
+      <div class="content-section active" id="newsSection">
+          <div class="section-header-inline">
+              <h3>Mantente informado sobre las tendencias más recientes</h3>
+              <div class="search-box">
+                  <span class="search-icon">🔍</span>
+                  <input type="text" id="newsSearch" placeholder="Buscar noticias...">
+              </div>
+          </div>
+          
+          <!-- Filtros de categorías -->
+          <div class="filter-tags" id="newsFilters">
+              <span class="filter-tag active" data-filter="all">Todas</span>
+              <span class="filter-tag" data-filter="ia">Inteligencia Artificial</span>
+              <span class="filter-tag" data-filter="cloud">Cloud Computing</span>
+              <span class="filter-tag" data-filter="seguridad">Seguridad</span>
+              <span class="filter-tag" data-filter="optimizacion">Optimización</span>
+              <span class="filter-tag" data-filter="data">Data Analytics</span>
+          </div>
+          
+          <!-- Contador de resultados -->
+          <div class="results-counter">
+              <span id="newsResults">0</span> noticias encontradas
+          </div>
+          
+          <!-- Grid de noticias -->
+          <div class="news-grid" id="newsContainer">
+              <!-- Las noticias se cargarán aquí -->
+          </div>
+          
+          <!-- Paginación -->
+          <div class="pagination-controls">
+              <button class="btn ghost prev-btn" id="prevNews" disabled>← Anteriores</button>
+              <span class="page-info">Página <span id="newsPage">1</span> de <span id="newsTotalPages">1</span></span>
+              <button class="btn ghost next-btn" id="nextNews">Siguientes →</button>
+          </div>
+      </div>
+      
+      <!-- Sección de Podcasts (oculta por defecto) -->
+      <div class="content-section" id="podcastsSection">
+          <div class="section-header-inline">
+              <h3>Aprende sobre nube, datos e IA mientras te desplazas</h3>
+              <div class="search-box">
+                  <span class="search-icon">🔍</span>
+                  <input type="text" id="podcastSearch" placeholder="Buscar episodios...">
+              </div>
+          </div>
+          
+          <!-- Filtros de categorías -->
+          <div class="filter-tags" id="podcastFilters">
+              <span class="filter-tag active" data-filter="all">Todos</span>
+              <span class="filter-tag" data-filter="ml">Machine Learning</span>
+              <span class="filter-tag" data-filter="infra">Infraestructura</span>
+              <span class="filter-tag" data-filter="genai">IA Generativa</span>
+              <span class="filter-tag" data-filter="data">Data Analytics</span>
+              <span class="filter-tag" data-filter="migracion">Migración Cloud</span>
+          </div>
+          
+          <!-- Contador de resultados -->
+          <div class="results-counter">
+              <span id="podcastResults">0</span> episodios encontrados
+          </div>
+          
+          <!-- Grid de podcasts -->
+          <div class="podcast-grid" id="podcastContainer">
+              <!-- Los podcasts se cargarán aquí -->
+          </div>
+          
+          <!-- Paginación -->
+          <div class="pagination-controls">
+              <button class="btn ghost prev-btn" id="prevPodcast" disabled>← Anteriores</button>
+              <span class="page-info">Página <span id="podcastPage">1</span> de <span id="podcastTotalPages">1</span></span>
+              <button class="btn ghost next-btn" id="nextPodcast">Siguientes →</button>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- REPRODUCTOR DE PODCAST MODAL -->
+<div class="podcast-modal-overlay" id="podcastModal">
+  <div class="podcast-modal">
+      <button class="podcast-modal-close" id="closePodcastModal">×</button>
+      <div class="podcast-player">
+          <div class="podcast-player-header">
+              <img id="currentPodcastImage" src="" alt="Portada del episodio">
+              <div>
+                  <h3 id="currentPodcastTitle"></h3>
+                  <p id="currentPodcastDesc"></p>
+                  <div class="podcast-meta">
+                      <span id="currentPodcastDuration"></span>
+                      <span id="currentPodcastDate"></span>
+                  </div>
+              </div>
+          </div>
+          <div class="audio-player">
+              <audio id="podcastAudio" controls>
+                  <source src="" type="audio/mpeg">
+                  Tu navegador no soporta el elemento de audio.
+              </audio>
+              <div class="player-controls">
+                  <button class="player-btn" id="playPauseBtn">▶️ Reproducir</button>
+                  <button class="player-btn" id="muteBtn">🔊 Silenciar</button>
+                  <div class="volume-slider">
+                      <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+                      <label for="volumeSlider">Volumen</label>
+                  </div>
+              </div>
+          </div>
+          <div class="player-info">
+              <p>Reproduciendo directamente en el navegador. También puedes <a href="#" id="spotifyLink" target="_blank">escuchar en Spotify</a>.</p>
+          </div>
+      </div>
+  </div>
+</div>
+
+    <!-- PLAYBOOKS -->
+    <section>
+      <div class="section-header">
+        <p class="eyebrow">Playbooks</p>
+        <h2>Documentos accionables</h2>
+      </div>
+      <div class="resource-grid">
+        <article class="resource-card">
+          <span>Playbook</span>
+          <h3>Cloud Fabric Express</h3>
+          <p>Checklist y blueprint para lanzar una landing zone en 30 días con AWS o Azure.</p>
+          <a class="btn primary" href="#">Descargar</a>
+        </article>
+        <article class="resource-card">
+          <span>Kit</span>
+          <h3>Data Monetization</h3>
+          <p>Canvas para identificar activos de datos monetizables y modelos de negocio basados en data.</p>
+          <a class="btn ghost" href="#">Obtener</a>
+        </article>
+        <article class="resource-card">
+          <span>Playbook</span>
+          <h3>TrustOps Response</h3>
+          <p>Procedimientos y automatizaciones para contención y respuesta ante incidentes de seguridad.</p>
+          <a class="btn primary" href="#">Descargar</a>
+        </article>
+        <article class="resource-card">
+          <span>Template</span>
+          <h3>FinOps Dashboard</h3>
+          <p>Plantilla de tablero para monitorear y optimizar costos cloud en tiempo real.</p>
+          <a class="btn ghost" href="#">Obtener</a>
+        </article>
+        <article class="resource-card">
+          <span>Guía</span>
+          <h3>GenAI Readiness</h3>
+          <p>Assessment para evaluar la madurez de tu organización para implementar IA generativa.</p>
+          <a class="btn primary" href="#">Descargar</a>
+        </article>
+        <article class="resource-card">
+          <span>Checklist</span>
+          <h3>Zero Trust Roadmap</h3>
+          <p>Pasos para evolucionar tu postura de seguridad hacia un modelo Zero Trust continuo.</p>
+          <a class="btn ghost" href="#">Obtener</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- UPCOMING -->
+    <section>
+      <div class="section-header">
+        <p class="eyebrow">Próximos eventos</p>
+        <h2>Agenda de webinars y workshops</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card" data-color="cyan">
+          <span class="caso-categoria">Webinar</span>
+          <h3>Cloud Cost Optimization</h3>
+          <p>Estrategias prácticas para reducir hasta 40% tus costos en AWS y Azure.</p>
+          <small style="color: var(--muted);">📅 15 de Enero, 2025 · 11:00 AM CST</small>
+          <a class="btn primary" href="contacto.html" style="margin-top: 16px;">Registrarse</a>
+        </article>
+        <article class="card" data-color="violet">
+          <span class="caso-categoria">Workshop</span>
+          <h3>GenAI Hands-on Lab</h3>
+          <p>Construye tu primer copiloto empresarial con RAG y modelos de lenguaje.</p>
+          <small style="color: var(--muted);">📅 22 de Enero, 2025 · 10:00 AM CST</small>
+          <a class="btn primary" href="contacto.html" style="margin-top: 16px;">Registrarse</a>
+        </article>
+        <article class="card" data-color="pink">
+          <span class="caso-categoria">Meetup</span>
+          <h3>Data Leaders León</h3>
+          <p>Networking y charlas con líderes de datos de la región Bajío.</p>
+          <small style="color: var(--muted);">📅 5 de Febrero, 2025 · 7:00 PM CST</small>
+          <a class="btn primary" href="contacto.html" style="margin-top: 16px;">Registrarse</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section>
+      <div class="card-grid">
+        <article class="card">
+          <h3>¿Quieres colaborar?</h3>
+          <p>Participa como speaker o comparte una historia de innovación con nuestra comunidad.</p>
+          <a class="btn primary" href="contacto.html">Contactar</a>
+        </article>
+        <article class="card">
+          <h3>Suscríbete</h3>
+          <p>Recibe nuevas guías, episodios y eventos cada mes directamente en tu correo.</p>
+          <form class="contact-form" style="margin-top: 16px;">
+            <input type="email" placeholder="tu@empresa.com" required>
+            <button class="btn primary" type="submit">Suscribirme</button>
+          </form>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <p>SIPSER Cloud · Arquitecturas que rompen la inercia</p>
+      <small>León · CDMX · Monterrey · Guadalajara · Austin</small>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="soluciones.html" data-page="soluciones">Soluciones</a></li>
+        <li><a href="adn.html" data-page="adn">ADN</a></li>
+        <li><a href="exitos.html" data-page="exitos">Éxitos</a></li>
+        <li><a href="contenido.html" data-page="contenido" class="active">Contenido</a></li>
+        <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <small>© <span id="year"></span> SIPSER Cloud. Todos los derechos reservados.</small>
+  </footer>
+
+  <script src="main.js" defer></script>
+  <!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/5215555555555" 
+class="whatsapp-float" 
+target="_blank" 
+rel="noopener"
+aria-label="Chat por WhatsApp">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+ <path d="M12 2C6.48 2 2 6.48 2 12C2 14.9 3.2 17.43 5.11 19.27L4.5 21.5L6.73 20.89C8.57 22.8 11.1 24 14 24C19.52 24 24 19.52 24 14C24 8.48 19.52 4 14 4H12V2ZM7.6 17.11C7.06 16.57 7.06 15.63 7.6 15.09L9.22 13.47C9.76 12.93 10.7 12.93 11.24 13.47L12.86 15.09C13.4 15.63 13.4 16.57 12.86 17.11L11.24 18.73C10.7 19.27 9.76 19.27 9.22 18.73L7.6 17.11ZM16.38 10.88C16.92 11.42 16.92 12.36 16.38 12.9L14.76 14.52C14.22 15.06 13.28 15.06 12.74 14.52L11.12 12.9C10.58 12.36 10.58 11.42 11.12 10.88L12.74 9.26C13.28 8.72 14.22 8.72 14.76 9.26L16.38 10.88Z" fill="white"/>
+</svg>
+</a>
+<!-- MODAL DETALLADO DE NOTICIAS -->
+<div class="news-modal-overlay" id="newsModal">
+  <div class="news-modal">
+      <button class="news-modal-close" id="closeNewsModal">×</button>
+      <div class="news-modal-content">
+          <div class="news-modal-header">
+              <span class="news-modal-category" id="modalNewsCategory"></span>
+              <h2 id="modalNewsTitle"></h2>
+              <div class="news-modal-meta">
+                  <span class="news-modal-date" id="modalNewsDate"></span>
+                  <span class="news-modal-readtime" id="modalNewsReadTime"></span>
+              </div>
+          </div>
+          
+          <div class="news-modal-body">
+              <div class="news-modal-image">
+                  <img id="modalNewsImage" src="" alt="Imagen de la noticia">
+              </div>
+              <div class="news-modal-text">
+                  <div id="modalNewsContent"></div>
+                  
+                  <div class="news-modal-highlights">
+                      <h3>💡 Puntos Clave</h3>
+                      <ul id="modalNewsHighlights"></ul>
+                  </div>
+                  
+                  <div class="news-modal-tags" id="modalNewsTags"></div>
+              </div>
+          </div>
+          
+          <div class="news-modal-footer">
+              <div class="news-modal-actions">
+                  <button class="btn primary" id="shareNewsBtn">
+                      📤 Compartir
+                  </button>
+              </div>
+              <div class="news-modal-related" id="modalRelatedNews">
+                  <h4>📰 Noticias Relacionadas</h4>
+                  <div class="related-news-grid" id="relatedNewsContainer"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  <!-- CMS Content Loader -->
+  <script src="js/cms-loader.js" defer></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "titulo": "Migración a la Nube",
+  "icono": "☁️",
+  "descripcion": "Lleva tu información de forma segura y escalable a la nube para optimizar tu operación.",
+  "caracteristicas": [
+    "Migración segura de entornos on-premise",
+    "Escalabilidad automática",
+    "Optimización de costos",
+    "Alta disponibilidad"
+  ],
+  "contenido_modal": "## Migración a la Nube\n\nTransforma tu infraestructura con una migración segura y planificada hacia AWS.\n\n### ¿Qué incluye?\n\n- **Assessment inicial**: Evaluamos tu infraestructura actual\n- **Planificación**: Diseñamos la estrategia de migración\n- **Ejecución**: Migramos con mínimo impacto operativo\n- **Optimización**: Ajustamos recursos post-migración\n\n### Beneficios\n\n- Reducción de costos operativos hasta 40%\n- Escalabilidad bajo demanda\n- Mayor seguridad y cumplimiento\n- Backup y disaster recovery automatizado",
+  "orden": 1,
+  "activo": true
+}

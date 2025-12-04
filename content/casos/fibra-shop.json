@@ -1,0 +1,30 @@
+{
+  "cliente": "Fibra Shop",
+  "logo": "/assets/fibra-shop.webp",
+  "badge": "DATA ANALYTICS",
+  "impacto": "crecimiento",
+  "descripcion": "Implementación de plataforma de analytics para optimización de operaciones retail en centros comerciales.",
+  "metricas": [
+    {
+      "icono": "📊",
+      "valor": "35%",
+      "etiqueta": "MÁS INSIGHTS"
+    },
+    {
+      "icono": "⏱️",
+      "valor": "50%",
+      "etiqueta": "MENOS TIEMPO"
+    }
+  ],
+  "reto": "Fibra Shop necesitaba consolidar datos de múltiples centros comerciales para tomar decisiones estratégicas basadas en información en tiempo real.",
+  "solucion": "Implementamos un Data Lake en AWS con:\n\n- Amazon S3 para almacenamiento centralizado\n- AWS Glue para ETL automatizado\n- Amazon QuickSight para visualización\n- Amazon Athena para consultas ad-hoc",
+  "resultados": [
+    "Dashboard unificado de todos los centros comerciales",
+    "Reportes automatizados diarios y semanales",
+    "Predicción de tráfico con 85% de precisión",
+    "Reducción del 50% en tiempo de generación de reportes"
+  ],
+  "video_url": "",
+  "destacado": false,
+  "orden": 3
+}

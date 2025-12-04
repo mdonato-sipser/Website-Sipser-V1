@@ -1,0 +1,157 @@
+{
+  "hero": {
+    "eyebrow": "ADN SIPSER Cloud",
+    "titulo": "Equipos obsesionados con crear experiencias imposibles",
+    "subtitulo": "Nuestro método une arquitectura, datos, IA, seguridad y estrategia de producto en un solo flujo continuo."
+  },
+  "valores": {
+    "eyebrow": "Nuestros Valores",
+    "titulo": "Los principios que nos definen y nos impulsan cada día",
+    "tarjetas": [
+      {
+        "icono": "💡",
+        "titulo": "Innovación Constante",
+        "descripcion": "Anticipamos las necesidades del mercado con tecnología de vanguardia y soluciones que marcan tendencia."
+      },
+      {
+        "icono": "⚡",
+        "titulo": "Agilidad Empresarial",
+        "descripcion": "Metodologías ágiles que nos permiten responder rápidamente a los cambios del mercado y necesidades de clientes."
+      },
+      {
+        "icono": "🎯",
+        "titulo": "Excelencia Operacional",
+        "descripcion": "Compromiso inquebrantable con la calidad en cada proyecto, garantizando resultados excepcionales."
+      },
+      {
+        "icono": "🤝",
+        "titulo": "Colaboración",
+        "descripcion": "Trabajamos codo a codo con nuestros clientes como verdaderos socios estratégicos de su crecimiento."
+      },
+      {
+        "icono": "🌱",
+        "titulo": "Sostenibilidad",
+        "descripcion": "Soluciones tecnológicas responsables que minimizan el impacto ambiental y maximizan la eficiencia energética."
+      },
+      {
+        "icono": "🔐",
+        "titulo": "Seguridad Primero",
+        "descripcion": "La protección de datos y la privacidad son pilares fundamentales en cada solución que implementamos."
+      }
+    ]
+  },
+  "impacto": {
+    "eyebrow": "Expertise Especializado",
+    "titulo": "Áreas de impacto empresarial",
+    "areas_izq": [
+      "Finanzas & Contabilidad",
+      "Ventas & Marketing",
+      "Recursos Humanos",
+      "Operaciones",
+      "TI & Sistemas",
+      "Estrategia"
+    ],
+    "areas_der": []
+  },
+  "equipo": {
+    "titulo": "Equipo certificado",
+    "subtitulo": "Capacidad técnica certificada, sin necesidad de contratación",
+    "descripcion": "Accede a un equipo multidisciplinario de expertos sin los costos y complejidad de contratar y capacitar personal especializado:",
+    "roles": [
+      {
+        "icono": "🏗️",
+        "titulo": "Arquitectos de Soluciones AWS Certificados",
+        "descripcion": "Expertos en diseño cloud"
+      },
+      {
+        "icono": "📊",
+        "titulo": "Científicos de Datos & Analistas de Negocio",
+        "descripcion": "Transforman datos en valor"
+      },
+      {
+        "icono": "🗃️",
+        "titulo": "Expertos en Bases de Datos & AI",
+        "descripcion": "Gestión inteligente de datos"
+      },
+      {
+        "icono": "💻",
+        "titulo": "Desarrolladores & DevOps Engineers",
+        "descripcion": "Implementación ágil"
+      }
+    ]
+  },
+  "expertise": {
+    "eyebrow": "Servicios Especializados",
+    "titulo": "Expertise que impulsa resultados",
+    "tarjetas": [
+      {
+        "icono": "🛠️",
+        "titulo": "Infraestructura & Cloud",
+        "items": [
+          "Migración a la Nube",
+          "Infraestructura Cloud",
+          "Continuidad de Negocio"
+        ]
+      },
+      {
+        "icono": "📊",
+        "titulo": "Datos & Analítica",
+        "items": [
+          "Ingeniería de Datos",
+          "Business Intelligence",
+          "Machine Learning"
+        ]
+      },
+      {
+        "icono": "🤖",
+        "titulo": "Inteligencia Artificial",
+        "items": [
+          "IA Generativa",
+          "Modelos Predictivos",
+          "Automatización con IA"
+        ]
+      }
+    ]
+  },
+  "vision": {
+    "eyebrow": "Nuestra Metodología",
+    "titulo": "VISIÓN SISTÉMICA",
+    "subtitulo": "Nuestras soluciones están basadas en un pensamiento sistémico que implica entender y abordar los problemas considerando el todo, no solo las partes.",
+    "puntos": [
+      {
+        "titulo": "Diseño de soluciones integradas",
+        "descripcion": "Cuando implementamos una solución tecnológica, consideramos cómo afecta no solo al área objetivo (por ejemplo, ventas), sino también a finanzas, operaciones, recursos humanos y estrategia."
+      },
+      {
+        "titulo": "Consultoría con enfoque holístico",
+        "descripcion": "Nuestro equipo no solo implementa tecnología, sino que analiza cómo esa tecnología se alinea con los procesos, cultura y objetivos de nuestros clientes."
+      },
+      {
+        "titulo": "Prevención de efectos secundarios",
+        "descripcion": "Al entender el sistema completo, evitamos que una solución en un área genere problemas en otras (ejemplo, automatizar sin considerar el impacto del equipo humano)."
+      },
+      {
+        "titulo": "Empoderamiento de clientes",
+        "descripcion": "Enseñamos a nuestros clientes a ver su empresa como un sistema, para que tomen decisiones más informadas y aprenden a usar la tecnología en su favor para que genere un valor y no un gasto."
+      }
+    ]
+  },
+  "diferenciador": {
+    "eyebrow": "Nuestro Enfoque",
+    "titulo": "Nuestro diferenciador: Autonomía vs Dependencia",
+    "descripcion": "No buscamos crear dependencia. Queremos que nuestros clientes aprendan, se empoderen y utilicen nuestros servicios únicamente cuando realmente lo necesiten o en la etapa que lo necesiten.",
+    "puntos": [
+      {
+        "icono": "📉",
+        "titulo": "Reducimos la curva de aprendizaje",
+        "descripcion": "Aceleramos la adopción tecnológica con metodologías probadas y acompañamiento personalizado."
+      },
+      {
+        "icono": "🤝",
+        "titulo": "Fomentamos relación basada en confianza y colaboración",
+        "descripcion": "Trabajamos como socios estratégicos, no como proveedores. Tu éxito es nuestro éxito."
+      }
+    ],
+    "resultado": "Resultado: Clientes autónomos que dominan su tecnología y solo nos contactan cuando realmente lo necesitan."
+  }
+}

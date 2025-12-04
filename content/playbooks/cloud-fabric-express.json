@@ -1,0 +1,10 @@
+{
+  "titulo": "Cloud Fabric Express",
+  "tipo": "Playbook",
+  "descripcion": "Guía completa para diseñar tu estrategia de migración cloud en 30 días.",
+  "archivo": "/playbooks/cloud-fabric-express.pdf",
+  "link": "",
+  "btn_estilo": "primary",
+  "btn_texto": "Descargar Playbook",
+  "orden": 1
+}

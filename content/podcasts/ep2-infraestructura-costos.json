@@ -1,0 +1,12 @@
+{
+  "titulo": "El costo de mantenimiento de infraestructura",
+  "categoria": "infra",
+  "descripcion": "Hablamos con el ingeniero Guillermo Reyes, Solution Architect de AWS, sobre las ventajas del abastecimiento en nube.",
+  "episodio": "Episode 2",
+  "duracion": "32 min",
+  "fecha": "2024-03-08T10:00:00.000Z",
+  "imagen": "/icons/podcast-infra.jpg",
+  "audio_url": "/podcasts/episode2.mp3",
+  "spotify_url": "https://open.spotify.com/episode/...",
+  "publicado": true
+}

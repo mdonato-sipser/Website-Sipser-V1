@@ -1,0 +1,14 @@
+{
+  "titulo": "Continuidad de Negocio",
+  "icono": "🔄",
+  "descripcion": "Garantiza la operación continua con recuperación ante desastres y alta disponibilidad.",
+  "caracteristicas": [
+    "Recuperación ante desastres",
+    "Backup y restauración",
+    "Alta disponibilidad",
+    "Planes de contingencia"
+  ],
+  "contenido_modal": "## Continuidad de Negocio\n\nProtege tu operación con estrategias robustas de disaster recovery y alta disponibilidad.\n\n### ¿Qué incluye?\n\n- **DR Planning**: Diseño de estrategia de recuperación\n- **Backup automatizado**: Respaldos programados y verificados\n- **Failover automático**: Cambio transparente a sitio secundario\n- **Pruebas regulares**: Simulacros de recuperación\n\n### Beneficios\n\n- RPO y RTO según necesidades del negocio\n- Cumplimiento normativo garantizado\n- Tranquilidad operativa 24/7\n- Reducción de riesgos empresariales",
+  "orden": 2,
+  "activo": true
+}

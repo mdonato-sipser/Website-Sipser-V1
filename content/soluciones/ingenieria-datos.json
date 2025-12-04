@@ -1,0 +1,14 @@
+{
+  "titulo": "Ingeniería de Datos",
+  "icono": "📊",
+  "descripcion": "Convierte datos en ciencia. Crea procedimientos únicos para decisiones informadas.",
+  "caracteristicas": [
+    "Pipeline de datos automatizado",
+    "Análisis predictivo",
+    "Integración de fuentes múltiples",
+    "Dashboards interactivos"
+  ],
+  "contenido_modal": "## Ingeniería de Datos\n\nConstruye pipelines de datos robustos que alimenten decisiones estratégicas.\n\n### ¿Qué incluye?\n\n- **Data Lake**: Almacenamiento centralizado y escalable\n- **ETL/ELT**: Procesos de transformación automatizados\n- **Data Quality**: Validación y limpieza de datos\n- **Orquestación**: Workflows programados y monitoreados\n\n### Tecnologías\n\n- AWS Glue, Amazon EMR\n- Amazon Redshift, Athena\n- Apache Spark, Airflow\n- dbt, Great Expectations",
+  "orden": 3,
+  "activo": true
+}

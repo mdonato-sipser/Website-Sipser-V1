@@ -1,0 +1,10 @@
+{
+  "titulo": "FinOps Starter Kit",
+  "tipo": "Kit",
+  "descripcion": "Templates y checklists para implementar prácticas FinOps en tu organización.",
+  "archivo": "/playbooks/finops-starter-kit.pdf",
+  "link": "",
+  "btn_estilo": "ghost",
+  "btn_texto": "Descargar Kit",
+  "orden": 2
+}

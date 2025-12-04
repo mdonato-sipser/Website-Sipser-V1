@@ -1,0 +1,9 @@
+{
+  "titulo": "Cloud Cost Optimization",
+  "tipo": "Webinar",
+  "color": "cyan",
+  "descripcion": "Estrategias prácticas para reducir hasta 40% tus costos en AWS y Azure.",
+  "fecha": "2025-01-15T17:00:00.000Z",
+  "link_registro": "contacto.html",
+  "activo": true
+}

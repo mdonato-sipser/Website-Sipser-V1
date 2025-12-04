@@ -1,0 +1,20 @@
+{
+  "whatsapp": {
+    "numero": "5215555555555",
+    "mostrar": true
+  },
+  "portal": {
+    "url": "https://portal.sipser.com.mx/",
+    "texto": "🔐 Portal Cliente"
+  },
+  "footer": {
+    "tagline": "SIPSER Cloud · Arquitecturas que rompen la inercia",
+    "ciudades": "León · CDMX · Monterrey · Guadalajara · Austin"
+  },
+  "redes": {
+    "linkedin": "",
+    "twitter": "",
+    "youtube": "",
+    "instagram": ""
+  }
+}

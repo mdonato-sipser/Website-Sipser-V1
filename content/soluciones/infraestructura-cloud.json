@@ -1,0 +1,14 @@
+{
+  "titulo": "Infraestructura Cloud",
+  "icono": "🛡️",
+  "descripcion": "Entornos tangibles, seguros y analíticos. Comunicación robusta con información clave.",
+  "caracteristicas": [
+    "Arquitectura cloud nativa",
+    "Seguridad empresarial",
+    "Monitoreo 24/7",
+    "Backup automático"
+  ],
+  "contenido_modal": "## Infraestructura Cloud\n\nDiseñamos y operamos arquitecturas cloud que impulsan tu negocio.\n\n### ¿Qué incluye?\n\n- **Diseño**: Arquitecturas Well-Architected\n- **Implementación**: IaC con Terraform/CloudFormation\n- **Operación**: Soporte y monitoreo continuo\n- **Optimización**: FinOps y right-sizing\n\n### Características\n\n- Multi-AZ y multi-región\n- Auto-scaling inteligente\n- Seguridad en capas (WAF, Shield, GuardDuty)\n- Cumplimiento normativo (SOC2, ISO27001, PCI)",
+  "orden": 5,
+  "activo": true
+}

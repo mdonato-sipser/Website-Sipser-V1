@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIPSER Cloud · Casos de Éxito</title>
+  <meta name="description" content="Casos reales de modernización cloud, data y ciberseguridad con SIPSER Cloud. Resultados medibles en retail, finanzas, manufactura y más.">
+  <meta name="keywords" content="casos de éxito, transformación digital, cloud computing, resultados, ROI, clientes">
+  <link rel="canonical" href="https://sipser.com.mx/exitos">
+  <link rel="icon" type="image/svg+xml" href="icons/Log_40_white-px.png">
+  <link rel="alternate icon" type="image/x-icon" href="icons/Log_40_white-px.png">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Casos de Éxito - SIPSER Cloud">
+  <meta property="og:description" content="Historias que combinan imaginación tecnológica con negocio.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js" defer></script>
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body data-theme="light" data-page="exitos">
+  
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <div class="loader-spinner"></div>
+      <p class="loader-text">SIPSER Cloud</p>
+    </div>
+  </div>
+  
+  <canvas id="cosmos"></canvas>
+  <button class="theme-toggle" aria-label="Cambiar tema"><span>☾</span></button>
+
+  <nav>
+    <a class="brand" href="index.html">
+      <img src="icons/SIPSER.png" alt="SIPSER Cloud" id="theme-logo">
+    </a>
+    <ul>
+      <li><a href="soluciones.html" data-page="soluciones">Soluciones</a></li>
+      <li><a href="adn.html" data-page="adn">ADN</a></li>
+      <li><a href="exitos.html" data-page="exitos" class="active">Éxitos</a></li>
+      <li><a href="contenido.html" data-page="contenido">Contenido</a></li>
+      <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="btn primary" href="https://portal.sipser.com.mx/" target="_blank" rel="noopener">🔐 Portal Cliente</a>
+    </div>
+    <button class="burger" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="page-hero page-hero--compact">
+      <div>
+        <p class="eyebrow">Casos reales</p>
+        <h1>Historias que combinan imaginación tecnológica con negocio</h1>
+        <p class="page-lede">Del retail al sector financiero, nuestros squads operan junto a los equipos internos para transformar la experiencia, el revenue y la resiliencia.</p>
+      </div>
+      <!-- Hero Visual - 3D Orb -->
+      <div class="home-hero-visual" data-hero-orb>
+        <div class="home-orb-overlay">
+          <img src="icons/SIPSER.png" alt="Ecosistema SIPSER" class="hero-logo" id="hero-logo">
+          <span class="orb-tag">Live telemetry</span>
+          <h3>Pods conectados en tiempo real</h3>
+          <p>Squads cloud, data e IA con tableros compartidos y rituales en vivo.</p>
+          <div class="orb-stats">
+            <div>
+              <strong>+18</strong>
+              <small>Pods activos</small>
+            </div>
+            <div>
+              <strong>47%</strong>
+              <small>valor acelerado</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section>
+      <div class="section-header">
+        <p class="eyebrow">Resultados medibles</p>
+        <h2>Números que hablan por sí solos</h2>
+      </div>
+      <div class="hero-metrics" style="max-width: 900px; margin: 0 auto;">
+        <article>
+          <span data-count="500" data-suffix="+">0</span>
+          <small>Proyectos Exitosos</small>
+        </article>
+        <article>
+          <span data-count="24" data-suffix="/7">0</span>
+          <small>Soporte Dedicado</small>
+        </article>
+        <article>
+          <span data-count="15" data-suffix="+">0</span>
+          <small>Años de Experiencia</small>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= EXITOS PAGE - REDISEÑO ================= -->
+    <section class="exitos-page">
+      <div class="page-header">
+        <h1 class="page-title">Casos de Éxito</h1>
+        <p class="page-subtitle">Historias de transformación digital que inspiran y demuestran resultados tangibles</p>
+      </div>
+      
+      <!-- Sección de casos de éxito sin filtros -->
+      <div class="casos-grid-section">
+        <div class="casos-container">
+          
+          <!-- Link2Loyalty - Tarjeta Mejorada -->
+          <div class="caso-card enhanced featured" data-category="tecnologia servicios" onclick="abrirCasoDetalle('link2loyalty')">
+            <div class="caso-badge">BUSINESS INTELLIGENCE</div>
+            <div class="caso-header">
+              <div class="client-logo">
+                <img src="assets/link2loyalty.png" alt="Link2Loyalty" loading="lazy">
+              </div>
+              <div class="caso-meta">
+                <span class="caso-impacto">🔥 Alto Impacto</span>
+              </div>
+            </div>
+            <div class="caso-content">
+              <h3 class="caso-titulo">Link2Loyalty</h3>
+              <p class="caso-descripcion">Implementación de arquitectura cloud con 89.89% de uptime y sistema de business intelligence en tiempo real.</p>
+              
+              <div class="caso-resultados">
+                <div class="resultado-item">
+                  <span class="resultado-icon">⚡</span>
+                  <div>
+                    <strong>89.89%</strong>
+                    <span>uptime</span>
+                  </div>
+                </div>
+                <div class="resultado-item">
+                  <span class="resultado-icon">💰</span>
+                  <div>
+                    <strong>40%</strong>
+                    <span>SEGURIDAD COSTOS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="caso-actions enhanced" onclick="event.stopPropagation();">
+              <button class="caso-btn primary" onclick="abrirCasoDetalle('link2loyalty')">
+                <span>📖 Ver caso completo</span>
+              </button>
+              <button class="caso-btn contact" onclick="navigateToContacto('Link2Loyalty - Business Intelligence')">
+                <span>💬 ¿Proyecto similar?</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Concretos Técnicos - Tarjeta Mejorada -->
+          <div class="caso-card enhanced featured" data-category="manufactura" onclick="abrirCasoDetalle('concretos')">
+            <div class="caso-badge">INFRAESTRUCTURA CLOUD</div>
+            <div class="caso-header">
+              <div class="client-logo">
+                <img src="assets/concretos-tecnicos.png" alt="Concretos Técnicos" loading="lazy">
+              </div>
+              <div class="caso-meta">
+                <span class="caso-impacto">🛡️ Seguridad</span>
+              </div>
+            </div>
+            <div class="caso-content">
+              <h3 class="caso-titulo">Concretos Técnicos</h3>
+              <p class="caso-descripcion">Modernización completa de infraestructura para garantizar resiliencia, seguridad y crecimiento sostenible.</p>
+              
+              <div class="caso-resultados">
+                <div class="resultado-item">
+                  <span class="resultado-icon">🔒</span>
+                  <div>
+                    <strong>100%</strong>
+                    <span>SEGURIDAD</span>
+                  </div>
+                </div>
+                <div class="resultado-item">
+                  <span class="resultado-icon">⏱️</span>
+                  <div>
+                    <strong>60%</strong>
+                    <span>MÁS EFICIENTE</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="caso-actions enhanced" onclick="event.stopPropagation();">
+              <button class="caso-btn primary" onclick="abrirCasoDetalle('concretos')">
+                <span>📖 Ver caso completo</span>
+              </button>
+              <button class="caso-btn contact" onclick="navigateToContacto('Concretos Técnicos - Infraestructura Cloud')">
+                <span>💬 ¿Proyecto similar?</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Fibratel - Con Video -->
+          <div class="caso-card enhanced featured" data-category="tecnologia servicios" onclick="abrirCasoDetalle('fibratel')">
+            <div class="caso-badge video-available">TRANSFORMACIÓN DIGITAL 🎥</div>
+            <div class="caso-header">
+              <div class="client-logo">
+                <img src="assets/fibratel.png" alt="Fibratel" loading="lazy">
+              </div>
+              <div class="caso-meta">
+                <span class="caso-impacto">🌟 Destacado</span>
+              </div>
+            </div>
+            <div class="caso-content">
+              <h3 class="caso-titulo">Fibratel</h3>
+              <p class="caso-descripcion">Fortalecimiento de infraestructura tecnológica y mejora de eficiencia operativa con soluciones cloud avanzadas.</p>
+              
+              <div class="caso-resultados">
+                <div class="resultado-item">
+                  <span class="resultado-icon">📈</span>
+                  <div>
+                    <strong>45%</strong>
+                    <span>MÁS EFICIENTE</span>
+                  </div>
+                </div>
+                <div class="resultado-item">
+                  <span class="resultado-icon">💸</span>
+                  <div>
+                    <strong>35%</strong>
+                    <span>AHORRO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="caso-actions enhanced" onclick="event.stopPropagation();">
+              <button class="caso-btn primary" onclick="abrirCasoDetalle('fibratel')">
+                <span>🎬 Ver caso + video</span>
+              </button>
+              <button class="caso-btn contact" onclick="navigateToContacto('Fibratel - Transformación Digital')">
+                <span>💬 ¿Proyecto similar?</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Fibra Shop -->
+          <div class="caso-card enhanced featured" data-category="retail" onclick="abrirCasoDetalle('fibrashop')">
+            <div class="caso-badge">E-COMMERCE & DATOS</div>
+            <div class="caso-header">
+              <div class="client-logo">
+                <img src="assets/fibra-shop.png" alt="Fibra Shop" loading="lazy">
+              </div>
+              <div class="caso-meta">
+                <span class="caso-impacto">🛒 Retail</span>
+              </div>
+            </div>
+            <div class="caso-content">
+              <h3 class="caso-titulo">Fibra Shop</h3>
+              <p class="caso-descripcion">Plataforma de e-commerce escalable con sistema de analytics en tiempo real y automatización de procesos.</p>
+              
+              <div class="caso-resultados">
+                <div class="resultado-item">
+                  <span class="resultado-icon">🛒</span>
+                  <div>
+                    <strong>3x</strong>
+                    <span>VOLKS</span>
+                  </div>
+                </div>
+                <div class="resultado-item">
+                  <span class="resultado-icon">📊</span>
+                  <div>
+                    <strong>Real-time</strong>
+                    <span>ANALYTICS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="caso-actions enhanced" onclick="event.stopPropagation();">
+              <button class="caso-btn primary" onclick="abrirCasoDetalle('fibrashop')">
+                <span>📖 Ver caso completo</span>
+              </button>
+              <button class="caso-btn contact" onclick="navigateToContacto('Fibra Shop - E-commerce & Analytics')">
+                <span>💬 ¿Proyecto similar?</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Grupo Sistemas - Con Video -->
+          <div class="caso-card enhanced featured" data-category="tecnologia" onclick="abrirCasoDetalle('gruposistemas')">
+            <div class="caso-badge video-available">MACHINE LEARNING 🎥</div>
+            <div class="caso-header">
+              <div class="client-logo">
+                <img src="assets/grupo-sistemas.png" alt="Grupo Sistemas" loading="lazy">
+              </div>
+              <div class="caso-meta">
+                <span class="caso-impacto">🤖 IA</span>
+              </div>
+            </div>
+            <div class="caso-content">
+              <h3 class="caso-titulo">Grupo Sistemas</h3>
+              <p class="caso-descripcion">Implementación de modelos predictivos y sistema de inteligencia artificial para optimización de operaciones.</p>
+              
+              <div class="caso-resultados">
+                <div class="resultado-item">
+                  <span class="resultado-icon">🤖</span>
+                  <div>
+                    <strong>ML</strong>
+                    <span>IMPLEMENTADO</span>
+                  </div>
+                </div>
+                <div class="resultado-item">
+                  <span class="resultado-icon">🎯</span>
+                  <div>
+                    <strong>95%</strong>
+                    <span>PRECISIÓN</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="caso-actions enhanced" onclick="event.stopPropagation();">
+              <button class="caso-btn primary" onclick="abrirCasoDetalle('gruposistemas')">
+                <span>🎬 Ver caso + video</span>
+              </button>
+              <button class="caso-btn contact" onclick="navigateToContacto('Grupo Sistemas - Machine Learning')">
+                <span>💬 ¿Proyecto similar?</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Caso Próximo - Mejorado -->
+          <div class="caso-card enhanced next-case featured" onclick="navigateTo('contacto')">
+            <div class="next-case-content">
+              <div class="next-case-icon">✨</div>
+              <h3>¿Tu empresa aquí?</h3>
+              <p>Comienza tu historia de éxito con nosotros</p>
+              <div class="next-case-stats">
+                <div class="stat">
+                  <strong>+50</strong>
+                  <span>empresas</span>
+                </div>
+                <div class="stat">
+                  <strong>98%</strong>
+                  <span>satisfacción</span>
+                </div>
+                <div class="stat">
+                  <strong>+10</strong>
+                  <span>años</span>
+                </div>
+              </div>
+              <button class="caso-btn primary" onclick="event.stopPropagation(); navigateTo('contacto')">
+                <span>🚀 Iniciar proyecto</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Solicita un estudio</h3>
+          <p>Analizamos tu plataforma actual y diseñamos un plan de evolución en 10 días.</p>
+          <a class="btn primary" href="contacto.html">Solicitar</a>
+        </article>
+        <article class="card">
+          <h3>Explora contenidos</h3>
+          <p>Frameworks, episodios y plantillas listas para tu equipo.</p>
+          <a class="btn ghost" href="contenido.html">Ir a Contenido</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL DE CASO DE ÉXITO (Actualizado) -->
+  <div class="modal-overlay" id="casoModal">
+    <div class="modal">
+      <button class="modal-close" onclick="cerrarModal()">×</button>
+      <span class="caso-categoria modal-categoria" id="modalCategoria">Categoría</span>
+      <h2 class="modal-title" id="modalTitulo">Título del Caso</h2>
+      <p class="modal-descripcion" id="modalDescripcion">Descripción del caso...</p>
+      
+      <div class="modal-stats" id="modalStats">
+        <!-- Estadísticas dinámicas -->
+      </div>
+      
+      <div class="modal-video-container" id="modalVideoContainer">
+        <!-- Contenedor para video -->
+      </div>
+      
+      <div class="modal-content-wrapper">
+        <div class="modal-details">
+          <h4 style="margin-top: 24px; color: var(--text);">Resultados clave:</h4>
+          <ul class="modal-resultados" id="modalResultados">
+            <li>Resultado 1</li>
+            <li>Resultado 2</li>
+          </ul>
+          
+          <h4 style="margin-top: 24px; color: var(--text);">Solución implementada:</h4>
+          <p id="modalSolucion" style="color: var(--muted); margin-top: 8px;">Descripción de la solución...</p>
+        </div>
+      </div>
+      
+      <div style="margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap;">
+        <a class="btn primary" href="contacto.html">Quiero resultados similares</a>
+        <button class="btn ghost" onclick="cerrarModal()">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <p>SIPSER Cloud · Arquitecturas que rompen la inercia</p>
+      <small>León · CDMX · Monterrey · Guadalajara · Austin</small>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="soluciones.html" data-page="soluciones">Soluciones</a></li>
+        <li><a href="adn.html" data-page="adn">ADN</a></li>
+        <li><a href="exitos.html" data-page="exitos" class="active">Éxitos</a></li>
+        <li><a href="contenido.html" data-page="contenido">Contenido</a></li>
+        <li><a href="contacto.html" data-page="contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <small>© <span id="year"></span> SIPSER Cloud. Todos los derechos reservados.</small>
+  </footer>
+
+  <script src="main.js" defer></script>
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/5215555555555" 
+    class="whatsapp-float" 
+    target="_blank" 
+    rel="noopener"
+    aria-label="Chat por WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M12 2C6.48 2 2 6.48 2 12C2 14.9 3.2 17.43 5.11 19.27L4.5 21.5L6.73 20.89C8.57 22.8 11.1 24 14 24C19.52 24 24 19.52 24 14C24 8.48 19.52 4 14 4H12V2ZM7.6 17.11C7.06 16.57 7.06 15.63 7.6 15.09L9.22 13.47C9.76 12.93 10.7 12.93 11.24 13.47L12.86 15.09C13.4 15.63 13.4 16.57 12.86 17.11L11.24 18.73C10.7 19.27 9.76 19.27 9.22 18.73L7.6 17.11ZM16.38 10.88C16.92 11.42 16.92 12.36 16.38 12.9L14.76 14.52C14.22 15.06 13.28 15.06 12.74 14.52L11.12 12.9C10.58 12.36 10.58 11.42 11.12 10.88L12.74 9.26C13.28 8.72 14.22 8.72 14.76 9.26L16.38 10.88Z" fill="white"/>
+    </svg>
+  </a>
+  <!-- CMS Content Loader -->
+  <script src="js/cms-loader.js" defer></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "hero": {
+    "eyebrow": "Soluciones que entienden tu empresa",
+    "titulo": "Diseñamos experiencias cloud para organizaciones que lideran mercados",
+    "subtitulo": "Infraestructura, analítica y automatización trabajando juntas como un solo sistema.",
+    "btn_primario": "Explorar soluciones",
+    "btn_secundario": "Ver casos de éxito"
+  },
+  "orbe_stats": {
+    "stat1_numero": "+18",
+    "stat1_texto": "Pods activos",
+    "stat2_numero": "47%",
+    "stat2_texto": "valor acelerado"
+  },
+  "experiencia": {
+    "eyebrow": "Experiencia inmersiva",
+    "titulo": "Programas que combinan estrategia, producto y operación"
+  },
+  "clientes": {
+    "eyebrow": "NUESTROS CLIENTES",
+    "titulo": "Empresas que han confiado en SIPSER CLOUD",
+    "descripcion": "Acompañamos a organizaciones de distintas industrias a migrar, operar y evolucionar sus entornos en la nube con soluciones a la medida."
+  },
+  "meta": {
+    "eyebrow": "NUESTRA META",
+    "titulo": "Convertirnos en tu aliado estratégico",
+    "descripcion": "Con más de 10 años de experiencia ayudamos a las empresas a tomar decisiones basadas en datos, infraestructura confiable y automatización inteligente."
+  },
+  "evoluciona": {
+    "titulo": "EVOLUCIONA CON LAS NUEVAS TECNOLOGÍAS",
+    "subtitulo": "Te acompañamos en cada etapa para acelerar tu transformación digital."
+  },
+  "cta_final": {
+    "eyebrow": "¿Listo para comenzar?",
+    "titulo": "Active un Discovery Session y diseñemos el siguiente salto",
+    "descripcion": "Blueprint personalizado, assessment FinOps y propuesta de laboratorio generativo sin costo inicial."
+  }
+}

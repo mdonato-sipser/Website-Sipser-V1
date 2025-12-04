@@ -1,0 +1,30 @@
+{
+  "cliente": "Concretos Técnicos",
+  "logo": "/assets/concretos-tecnicos.png",
+  "badge": "INFRAESTRUCTURA CLOUD",
+  "impacto": "seguridad",
+  "descripcion": "Migración completa a AWS con arquitectura de alta disponibilidad y seguridad empresarial.",
+  "metricas": [
+    {
+      "icono": "🛡️",
+      "valor": "100%",
+      "etiqueta": "SEGURIDAD"
+    },
+    {
+      "icono": "📈",
+      "valor": "60%",
+      "etiqueta": "MEJOR RENDIMIENTO"
+    }
+  ],
+  "reto": "Concretos Técnicos operaba con infraestructura on-premise obsoleta que limitaba su crecimiento y presentaba vulnerabilidades de seguridad críticas.",
+  "solucion": "Diseñamos e implementamos una arquitectura cloud-native en AWS con:\n\n- VPC con subnets públicas y privadas\n- WAF y Shield para protección DDoS\n- Backup automatizado con retención de 30 días\n- Monitoreo 24/7 con alertas proactivas",
+  "resultados": [
+    "Migración sin downtime de sistemas críticos",
+    "Reducción del 60% en tiempos de respuesta",
+    "Cumplimiento de normativas de seguridad",
+    "Escalabilidad automática durante picos de demanda"
+  ],
+  "video_url": "",
+  "destacado": true,
+  "orden": 2
+}

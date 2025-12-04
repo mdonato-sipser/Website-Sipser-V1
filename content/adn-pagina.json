@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "eyebrow": "ADN SIPSER Cloud",
+    "titulo": "Equipos obsesionados con crear experiencias imposibles",
+    "subtitulo": "Nuestro método une arquitectura, datos, IA, seguridad y estrategia de producto en un solo flujo continuo."
+  },
+  "valores": {
+    "eyebrow": "Nuestros Valores",
+    "titulo": "Los principios que nos definen y nos impulsan cada día"
+  },
+  "impacto": {
+    "eyebrow": "Expertise Especializado",
+    "titulo": "Áreas de impacto empresarial"
+  },
+  "vision": {
+    "eyebrow": "Nuestra Metodología",
+    "titulo": "VISIÓN SISTÉMICA",
+    "subtitulo": "Nuestras soluciones están basadas en un pensamiento sistémico que implica entender y abordar los problemas considerando el todo, no solo las partes."
+  },
+  "diferenciador": {
+    "eyebrow": "Nuestro Enfoque",
+    "titulo": "Nuestro diferenciador: Autonomía vs Dependencia"
+  }
+}

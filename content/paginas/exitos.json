@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "eyebrow": "Casos reales",
+    "titulo": "Historias que combinan imaginación tecnológica con negocio",
+    "subtitulo": "Del retail al sector financiero, nuestros squads operan junto a los equipos internos para transformar la experiencia, el revenue y la resiliencia."
+  },
+  "stats": {
+    "eyebrow": "Resultados medibles",
+    "titulo": "Números que hablan por sí solos",
+    "metricas": [
+      {
+        "numero": "500",
+        "sufijo": "+",
+        "etiqueta": "Proyectos Exitosos"
+      },
+      {
+        "numero": "24",
+        "sufijo": "/7",
+        "etiqueta": "Soporte Dedicado"
+      },
+      {
+        "numero": "15",
+        "sufijo": "+",
+        "etiqueta": "Años de Experiencia"
+      }
+    ]
+  },
+  "casos_header": {
+    "titulo": "Casos de Éxito",
+    "subtitulo": "Historias de transformación digital que inspiran y demuestran resultados tangibles"
+  },
+  "cta": {
+    "card1": {
+      "titulo": "Solicita un estudio",
+      "descripcion": "Analizamos tu plataforma actual y diseñamos un plan de evolución en 10 días.",
+      "btn_texto": "Solicitar"
+    },
+    "card2": {
+      "titulo": "Explora contenidos",
+      "descripcion": "Frameworks, episodios y plantillas listas para tu equipo.",
+      "btn_texto": "Ir a Contenido"
+    }
+  }
+}

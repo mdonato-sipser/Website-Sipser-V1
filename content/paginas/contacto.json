@@ -1,0 +1,71 @@
+{
+  "hero": {
+    "eyebrow": "Conecta con nosotros",
+    "titulo": "Diseñemos juntos tu siguiente arquitectura",
+    "subtitulo": "Completa el formulario y nuestro equipo de especialistas te contactará en menos de 24 horas para agendar un discovery session sin costo."
+  },
+  "metricas": [
+    {
+      "numero": "24",
+      "sufijo": "h",
+      "etiqueta": "Respuesta garantizada"
+    },
+    {
+      "numero": "45",
+      "sufijo": " min",
+      "etiqueta": "Discovery session"
+    },
+    {
+      "numero": "10",
+      "sufijo": " días",
+      "etiqueta": "Blueprint personalizado"
+    }
+  ],
+  "oficina_leon": {
+    "titulo": "📍 Oficina León",
+    "direccion": "Blvd. Adolfo López Mateos 1102\nCol. Los Gavilanes, León, Gto.\nCP 37270",
+    "telefono": "+52 477 123 4567"
+  },
+  "oficina_cdmx": {
+    "titulo": "📍 Oficina CDMX",
+    "direccion": "Av. Paseo de la Reforma 296\nCol. Juárez, CDMX\nCP 06600",
+    "telefono": "+52 55 1234 5678"
+  },
+  "canales_directos": {
+    "titulo": "💬 Canales directos",
+    "descripcion": "Prefiere chat o llamada rápida:",
+    "whatsapp_texto": "WhatsApp",
+    "email_texto": "Email",
+    "email": "hola@sipser.com.mx"
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "titulo": "Lo que más nos preguntan",
+    "preguntas": [
+      {
+        "pregunta": "¿Qué incluye el discovery session?",
+        "respuesta": "Una llamada de 45 minutos con especialistas donde exploramos tu contexto, identificamos oportunidades y definimos siguientes pasos. Sin costo ni compromiso."
+      },
+      {
+        "pregunta": "¿Cuánto toma un proyecto típico?",
+        "respuesta": "Depende del alcance. Un piloto puede estar listo en 6 semanas. Una plataforma industrializada típicamente toma 90 días con nuestros squads dedicados."
+      },
+      {
+        "pregunta": "¿Trabajan con empresas pequeñas?",
+        "respuesta": "Sí. Tenemos programas de launch week para startups y scaleups, además de engagement enterprise para corporativos."
+      },
+      {
+        "pregunta": "¿En qué nubes trabajan?",
+        "respuesta": "Principalmente AWS, Azure y Google Cloud. También apoyamos ambientes híbridos y multi-cloud con gobernanza unificada."
+      },
+      {
+        "pregunta": "¿Tienen certificaciones?",
+        "respuesta": "Somos AWS Advanced Partner, Azure Solutions Partner y contamos con certificaciones en seguridad, datos e IA de múltiples vendors."
+      },
+      {
+        "pregunta": "¿Cómo es el modelo de pricing?",
+        "respuesta": "Ofrecemos modelos por proyecto, retainer mensual y outcome-based según las necesidades. Lo definimos juntos en el discovery."
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "eyebrow": "Knowledge Hub",
+    "titulo": "Frameworks, episodios y playbooks listos para accionar",
+    "subtitulo": "Curamos contenido creado junto a clientes y comunidades para acelerar tus iniciativas cloud, datos e IA."
+  },
+  "tabs": {
+    "tab1": "📰 Últimas Noticias",
+    "tab2": "🎙️ Podcasts SIPSER Cloud"
+  },
+  "noticias_section": {
+    "titulo": "Mantente informado sobre las tendencias más recientes",
+    "filtros": [
+      "Todas",
+      "Inteligencia Artificial",
+      "Cloud Computing",
+      "Seguridad",
+      "Optimización",
+      "Data Analytics"
+    ]
+  },
+  "podcasts_section": {
+    "titulo": "Aprende sobre nube, datos e IA mientras te desplazas",
+    "filtros": [
+      "Todos",
+      "Machine Learning",
+      "Infraestructura",
+      "IA Generativa",
+      "Data Analytics",
+      "Migración Cloud"
+    ]
+  },
+  "playbooks": {
+    "eyebrow": "Playbooks",
+    "titulo": "Documentos accionables"
+  },
+  "eventos": {
+    "eyebrow": "Próximos eventos",
+    "titulo": "Agenda de webinars y workshops"
+  },
+  "cta": {
+    "card1": {
+      "titulo": "¿Quieres colaborar?",
+      "descripcion": "Participa como speaker o comparte una historia de innovación con nuestra comunidad.",
+      "btn_texto": "Contactar"
+    },
+    "card2": {
+      "titulo": "Suscríbete",
+      "descripcion": "Recibe nuevas guías, episodios y eventos cada mes directamente en tu correo.",
+      "placeholder": "tu@empresa.com",
+      "btn_texto": "Suscribirme"
+    }
+  }
+}
