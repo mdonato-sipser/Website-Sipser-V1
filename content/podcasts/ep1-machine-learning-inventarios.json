@@ -2,7 +2,7 @@
   "publicado": true,
   "duracion": "25 min",
   "audio_url": "/podcasts/episode1.mp3",
-  "spotify_url": "<iframe data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/episode/0g21EUrrnQn8Am0GRNNUIn?utm_source=generator\" width=\"100%\" height=\"352\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>",
+  "spotify_url": "https://open.spotify.com/episode/0g21EUrrnQn8Am0GRNNUIn?si=5a71f7650d8e4731",
   "descripcion": "Aprende cómo optimizar la gestión de inventarios y tener respuesta clara de tu negocio con Machine Learning de AWS.",
   "episodio": "Episode 1",
   "categoria": "ml",
