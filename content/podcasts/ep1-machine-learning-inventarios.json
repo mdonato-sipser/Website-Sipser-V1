@@ -1,12 +1,12 @@
 {
-  "titulo": "¿Sobre demanda o escasez de inventarios? Prevee tus inventarios con Machine Learning",
-  "categoria": "ml",
+  "publicado": true,
+  "duracion": "25 min",
+  "audio_url": "/podcasts/episode1.mp3",
+  "spotify_url": "https://open.spotify.com/episode/0g21EUrrnQn8Am0GRNNUIn?si=92da7c1e8241447c",
   "descripcion": "Aprende cómo optimizar la gestión de inventarios y tener respuesta clara de tu negocio con Machine Learning de AWS.",
   "episodio": "Episode 1",
-  "duracion": "25 min",
-  "fecha": "2024-03-15T10:00:00.000Z",
+  "categoria": "ml",
   "imagen": "/icons/podcast-ml.jpg",
-  "audio_url": "/podcasts/episode1.mp3",
-  "spotify_url": "https://open.spotify.com/episode/...",
-  "publicado": true
+  "titulo": "¿Sobre demanda o escasez de inventarios? Prevee tus inventarios con Machine Learning",
+  "fecha": "2024-03-15T10:00:00.000Z"
 }
