@@ -1720,24 +1720,50 @@
                });
            }
        }
-      async function loadPageJSON() {
-  const page = document.body.dataset.page;
+      async function loadCMSPage() {
+  const page = document.body.dataset.cmsPage;
   if (!page) return;
 
-  const url = `/content/paginas/${page}.json`;
-  const res = await fetch(url, { cache: "no-store" });
-  if (!res.ok) return;
+  try {
+    const res = await fetch(`/content/paginas/${page}.json`, { cache: "no-store" });
+    if (!res.ok) return;
 
-  const data = await res.json();
-  bindContent(data);
+    const data = await res.json();
+    applyCMSBindings(data);
+  } catch (e) {
+    console.warn("Error cargando CMS:", e);
+  }
 }
 
-function bindContent(data) {
-  // Ejemplo simple por IDs:
-  if (data?.hero?.titulo) {
-    const el = document.getElementById("heroTitle");
-    if (el) el.textContent = data.hero.titulo;
-  }
+function getByPath(obj, path) {
+  return path.split(".").reduce((acc, k) => (acc && acc[k] !== undefined ? acc[k] : undefined), obj);
+}
+
+function applyCMSBindings(data) {
+  // Cambiar textos
+  document.querySelectorAll("[data-cms-text]").forEach(el => {
+    const path = el.getAttribute("data-cms-text");
+    const val = getByPath(data, path);
+    if (val !== undefined && val !== null) el.textContent = val;
+  });
+
+  // Cambiar links
+  document.querySelectorAll("[data-cms-href]").forEach(el => {
+    const path = el.getAttribute("data-cms-href");
+    const val = getByPath(data, path);
+    if (val) el.setAttribute("href", val);
+  });
+
+  // Cambiar imágenes (por si luego lo usas)
+  document.querySelectorAll("[data-cms-src]").forEach(el => {
+    const path = el.getAttribute("data-cms-src");
+    const val = getByPath(data, path);
+    if (val) el.setAttribute("src", val);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", loadCMSPage);
+
   // aquí sigues con los campos que necesites…
 }
 
