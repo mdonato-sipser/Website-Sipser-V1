@@ -255,3 +255,81 @@ collections:
               - {label: "LinkedIn", name: "linkedin", widget: "string", required: false}
               - {label: "Twitter", name: "twitter", widget: "string", required: false}
               - {label: "YouTube", name: "youtube", widget: "string", required: false}
+
+  - name: "paginas"
+    label: "📄 Páginas"
+    folder: "content/paginas"
+    extension: "json"
+    format: "json"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "slug"
+    fields:
+      - { label: "Slug (inicio/soluciones/adn...)", name: "slug", widget: "string" }
+
+      - label: "SEO"
+        name: "seo"
+        widget: "object"
+        fields:
+          - { label: "Título SEO", name: "title", widget: "string", required: false }
+          - { label: "Descripción SEO", name: "description", widget: "text", required: false }
+
+      - label: "Hero"
+        name: "hero"
+        widget: "object"
+        fields:
+          - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+          - { label: "Título", name: "titulo", widget: "string", required: false }
+          - { label: "Subtítulo", name: "subtitulo", widget: "text", required: false }
+          - label: "CTA Primario"
+            name: "cta_primario"
+            widget: "object"
+            fields:
+              - { label: "Texto", name: "texto", widget: "string", required: false }
+              - { label: "Link", name: "link", widget: "string", required: false }
+          - label: "CTA Secundario"
+            name: "cta_secundario"
+            widget: "object"
+            fields:
+              - { label: "Texto", name: "texto", widget: "string", required: false }
+              - { label: "Link", name: "link", widget: "string", required: false }
+
+      - label: "Secciones"
+        name: "secciones"
+        widget: "list"
+        types:
+          - label: "Cards (grid)"
+            name: "cards"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+              - { label: "Título", name: "titulo", widget: "string", required: false }
+              - { label: "Texto", name: "texto", widget: "text", required: false }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Título", name: "titulo", widget: "string" }
+                  - { label: "Descripción", name: "descripcion", widget: "text", required: false }
+                  - { label: "Icono (emoji)", name: "icono", widget: "string", required: false }
+                  - { label: "Link", name: "link", widget: "string", required: false }
+
+          - label: "Logos"
+            name: "logos"
+            widget: "object"
+            fields:
+              - { label: "Eyebrow", name: "eyebrow", widget: "string", required: false }
+              - { label: "Título", name: "titulo", widget: "string", required: false }
+              - label: "Logos"
+                name: "logos"
+                widget: "list"
+                field: { label: "Logo", name: "logo", widget: "image" }
+
+          - label: "CTA (bloque)"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Título", name: "titulo", widget: "string", required: false }
+              - { label: "Texto", name: "texto", widget: "text", required: false }
+              - { label: "Botón texto", name: "boton_texto", widget: "string", required: false }
+              - { label: "Botón link", name: "boton_link", widget: "string", required: false }
