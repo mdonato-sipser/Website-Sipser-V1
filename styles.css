@@ -4775,4 +4775,15 @@ body[data-theme="dark"] .solutions-grid .card:hover .solution-icon {
     .related-news-grid {
         grid-template-columns: 1fr;
     }
+   /* Fallback: si por alguna razón JS no lo oculta, se apaga solo */
+.page-loader {
+  animation: loaderFallbackHide 0s ease 2.5s forwards;
+}
+
+@keyframes loaderFallbackHide {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
