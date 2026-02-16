@@ -1720,6 +1720,29 @@
                });
            }
        }
+      async function loadPageJSON() {
+  const page = document.body.dataset.page;
+  if (!page) return;
+
+  const url = `/content/paginas/${page}.json`;
+  const res = await fetch(url, { cache: "no-store" });
+  if (!res.ok) return;
+
+  const data = await res.json();
+  bindContent(data);
+}
+
+function bindContent(data) {
+  // Ejemplo simple por IDs:
+  if (data?.hero?.titulo) {
+    const el = document.getElementById("heroTitle");
+    if (el) el.textContent = data.hero.titulo;
+  }
+  // aquí sigues con los campos que necesites…
+}
+
+document.addEventListener("DOMContentLoaded", loadPageJSON);
+
    
        // Función auxiliar para scroll
        function scrollToSection(sectionId) {
@@ -1732,6 +1755,7 @@
        // Inicializar
        init();
    });
+
    
    // ============================================
    // FIN DEL SISTEMA SIPSER CLOUD
