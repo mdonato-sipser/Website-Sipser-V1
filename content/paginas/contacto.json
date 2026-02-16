@@ -26,11 +26,6 @@
     "direccion": "Blvd. Adolfo López Mateos 1102\nCol. Los Gavilanes, León, Gto.\nCP 37270",
     "telefono": "+52 477 123 4567"
   },
-  "oficina_cdmx": {
-    "titulo": "📍 Oficina CDMX",
-    "direccion": "Av. Paseo de la Reforma 296\nCol. Juárez, CDMX\nCP 06600",
-    "telefono": "+52 55 1234 5678"
-  },
   "canales_directos": {
     "titulo": "💬 Canales directos",
     "descripcion": "Prefiere chat o llamada rápida:",
