@@ -1781,7 +1781,16 @@ document.addEventListener("DOMContentLoaded", loadPageJSON);
        // Inicializar
        init();
    });
+function hideLoader() {
+  const loader = document.getElementById("pageLoader");
+  if (loader) loader.classList.add("hidden");
+}
 
+document.addEventListener("DOMContentLoaded", hideLoader);
+window.addEventListener("load", hideLoader);
+setTimeout(hideLoader, 3000);
+
+   });
    
    // ============================================
    // FIN DEL SISTEMA SIPSER CLOUD
