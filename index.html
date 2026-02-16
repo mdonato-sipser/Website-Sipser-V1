@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="es-MX">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SIPSER Cloud · Arquitecturas Cloud, Data, IA y Ciberseguridad</title>
-  <meta name="description" content="SIPSER Cloud impulsa arquitecturas cloud, data, IA y ciberseguridad con squads de alto desempeño. Transformación digital en León, Guanajuato y México.">
-  <meta name="keywords" content="cloud computing, soluciones tecnológicas, transformación digital, SIPSER, innovación tecnológica, León Guanajuato, servicios IT, ciberseguridad, inteligencia artificial, AWS, Azure">
-  <meta name="author" content="SIPSER Cloud">
-  <link rel="canonical" href="https://sipser.com.mx">
-  <link rel="icon" type="image/svg+xml" href="icons/Log_40_white-px.png">
-  <link rel="alternate icon" type="image/x-icon" href="icons/Log_40_white-px.png">
-  
+
+  <meta name="description" content="SIPSER Cloud impulsa arquitecturas cloud, data, IA y ciberseguridad con squads de alto desempeño. Transformación digital en León, Guanajuato y México." />
+  <meta name="keywords" content="cloud computing, soluciones tecnológicas, transformación digital, SIPSER, innovación tecnológica, León Guanajuato, servicios IT, ciberseguridad, inteligencia artificial, AWS, Azure" />
+  <meta name="author" content="SIPSER Cloud" />
+  <link rel="canonical" href="https://sipser.com.mx" />
+
   <!-- Open Graph -->
-  <meta property="og:title" content="SIPSER Cloud - Arquitecturas que rompen la inercia">
-  <meta property="og:description" content="Diseñamos experiencias cloud sensoriales para organizaciones que lideran mercados. Cloud, Data, IA y Ciberseguridad.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sipser.com.mx">
-  <meta property="og:image" content="https://sipser.com.mx/og-image.jpg">
-  
+  <meta property="og:title" content="SIPSER Cloud - Arquitecturas que rompen la inercia" />
+  <meta property="og:description" content="Diseñamos experiencias cloud sensoriales para organizaciones que lideran mercados. Cloud, Data, IA y Ciberseguridad." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sipser.com.mx" />
+  <meta property="og:image" content="https://sipser.com.mx/og-image.jpg" />
+
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SIPSER Cloud">
-  <meta name="twitter:description" content="Arquitecturas Cloud, Data, IA y Ciberseguridad">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
-  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SIPSER Cloud" />
+  <meta name="twitter:description" content="Arquitecturas Cloud, Data, IA y Ciberseguridad" />
+
+  <!-- Favicon (evitamos duplicados) -->
+  <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico" />
+
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
   <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
+
   <!-- Netlify Identity Widget -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js" defer></script>
 </head>
-<body>
+
+<body data-cms-page="inicio">
   <!-- Page Loader -->
   <div class="page-loader" id="pageLoader">
     <div class="loader-content">
@@ -45,7 +46,7 @@
       <p class="loader-text">SIPSER Cloud</p>
     </div>
   </div>
-  
+
   <!-- Background Canvas -->
   <canvas id="cosmos"></canvas>
 
@@ -55,7 +56,7 @@
   <!-- Navigation -->
   <nav>
     <a class="brand" href="index.html">
-      <img src="icons/SIPSER.png" alt="SIPSER Cloud" id="theme-logo">
+      <img src="icons/SIPSER.png" alt="SIPSER Cloud" id="theme-logo" />
     </a>
     <ul>
       <li><a href="soluciones.html" data-page="soluciones">Soluciones</a></li>
@@ -68,9 +69,7 @@
       <a class="btn primary" href="https://portal.sipser.com.mx/" target="_blank" rel="noopener">🔐 Portal Cliente</a>
     </div>
     <button class="burger" aria-label="Abrir menú">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
   </nav>
 
@@ -84,7 +83,7 @@
         <span data-depth="0.5"></span>
         <span data-depth="0.72"></span>
       </div>
-      
+
       <!-- Network Canvas -->
       <canvas id="hero-network" class="hero-network"></canvas>
 
@@ -93,23 +92,28 @@
         <p class="eyebrow">Soluciones que entienden tu empresa</p>
         <h1 data-cms-text="hero.titulo">Diseñamos experiencias cloud para organizaciones...</h1>
         <p data-cms-text="hero.subtitulo">Infraestructura, analítica y automatización...</p>
-        <div class="hero-cta">
-         <a class="btn primary"
-         data-cms-text="hero.btn_primario_texto"
-         data-cms-href="hero.btn_primario_link"
-         href="soluciones.html">Explorar soluciones</a>
 
-         <a class="btn secondary"
-         data-cms-text="hero.btn_secundario_texto"
-         data-cms-href="hero.btn_secundario_link"
-         href="exitos.html">Ver casos de éxito</a>
+        <div class="hero-cta">
+          <a
+            class="btn primary"
+            data-cms-text="hero.btn_primario_texto"
+            data-cms-href="hero.btn_primario_link"
+            href="soluciones.html"
+          >Explorar soluciones</a>
+
+          <a
+            class="btn secondary"
+            data-cms-text="hero.btn_secundario_texto"
+            data-cms-href="hero.btn_secundario_link"
+            href="exitos.html"
+          >Ver casos de éxito</a>
         </div>
       </div>
 
       <!-- Hero Visual - 3D Orb -->
       <div class="home-hero-visual" data-hero-orb>
         <div class="home-orb-overlay">
-          <img src="icons/SIPSER.png" alt="Ecosistema SIPSER" class="hero-logo" id="hero-logo">
+          <img src="icons/SIPSER.png" alt="Ecosistema SIPSER" class="hero-logo" id="hero-logo" />
           <span class="orb-tag">Live telemetry</span>
           <h3>Pods conectados en tiempo real</h3>
           <p>Squads cloud, data e IA con tableros compartidos y rituales en vivo.</p>
@@ -127,56 +131,61 @@
       </div>
     </section>
 
-        <!-- NEWS CAROUSEL SECTION -->
-        <section class="news-section">
-          <div class="section-header">
-            <p class="eyebrow">News & Insights</p>
-            <h2>Lo último desde nuestros programas y laboratorios</h2>
-          </div>
-          <div class="news-carousel" data-news-carousel>
-            <button class="news-nav" data-news-prev aria-label="Noticia anterior">‹</button>
-            <div class="news-window">
-              <div class="news-track" data-news-track>
-                <article class="news-card">
-                  <img src="img\noticias\ia-generativa-empresas.jpg" alt="Noticia 1" loading="lazy">
-                  <div>
-                    <span>Retail</span>
-                    <h3>Copilotos para anticipar campañas</h3>
-                    <p>Lanzamos inteligencia contextual en 184 tiendas físicas con insights en 18 ms.</p>
-                  </div>
-                </article>
-                <article class="news-card">
-                  <img src="img\noticias\ia-generativa-empresas.jpg" alt="Noticia 2" loading="lazy">
-                  <div>
-                    <span>Real estate</span>
-                    <h3>Gemelos digitales con visión ESG</h3>
-                    <p>Monitoreo energético y predicciones ocupacionales con dashboards inmersivos.</p>
-                  </div>
-                </article>
-                <article class="news-card">
-                  <img src="img\noticias\ia-generativa-empresas.jpg" alt="Noticia 3" loading="lazy">
-                  <div>
-                    <span>Manufactura</span>
-                    <h3>Zero Trust continuo</h3>
-                    <p>Automatizamos respuesta ante incidentes con TrustMesh y SOC compartido.</p>
-                  </div>
-                </article>
-                <article class="news-card">
-                  <img src="assets/concretos-tecnicos.png" alt="Concretos Técnicos" loading="lazy">
-                  <div>
-                    <span>Infraestructura</span>
-                    <h3>Edge AI para operaciones críticas</h3>
-                    <p>Computer vision en plantas y rutas con alertas en tiempo real.</p>
-                  </div>
-                </article>
-              </div>
-            </div>
-            <button class="news-nav" data-news-next aria-label="Siguiente noticia">›</button>
-          </div>
-        </section>
-    
+    <!-- NEWS CAROUSEL SECTION -->
+    <section class="news-section">
+      <div class="section-header">
+        <p class="eyebrow">News & Insights</p>
+        <h2>Lo último desde nuestros programas y laboratorios</h2>
+      </div>
 
-    <!-- === NUEVO: EXPERIENCIA CON BADGES (Imagen 2) === -->
+      <div class="news-carousel" data-news-carousel>
+        <button class="news-nav" data-news-prev aria-label="Noticia anterior">‹</button>
+
+        <div class="news-window">
+          <div class="news-track" data-news-track>
+            <article class="news-card">
+              <img src="img/noticias/ia-generativa-empresas.jpg" alt="Noticia 1" loading="lazy" />
+              <div>
+                <span>Retail</span>
+                <h3>Copilotos para anticipar campañas</h3>
+                <p>Lanzamos inteligencia contextual en 184 tiendas físicas con insights en 18 ms.</p>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <img src="img/noticias/ia-generativa-empresas.jpg" alt="Noticia 2" loading="lazy" />
+              <div>
+                <span>Real estate</span>
+                <h3>Gemelos digitales con visión ESG</h3>
+                <p>Monitoreo energético y predicciones ocupacionales con dashboards inmersivos.</p>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <img src="img/noticias/ia-generativa-empresas.jpg" alt="Noticia 3" loading="lazy" />
+              <div>
+                <span>Manufactura</span>
+                <h3>Zero Trust continuo</h3>
+                <p>Automatizamos respuesta ante incidentes con TrustMesh y SOC compartido.</p>
+              </div>
+            </article>
+
+            <article class="news-card">
+              <img src="assets/concretos-tecnicos.png" alt="Concretos Técnicos" loading="lazy" />
+              <div>
+                <span>Infraestructura</span>
+                <h3>Edge AI para operaciones críticas</h3>
+                <p>Computer vision en plantas y rutas con alertas en tiempo real.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <button class="news-nav" data-news-next aria-label="Siguiente noticia">›</button>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA CON BADGES -->
     <section class="badges-section">
       <div class="section-header">
         <p class="eyebrow">NUESTRA EXPERIENCIA</p>
@@ -184,16 +193,16 @@
         <p>Certificaciones en servicios de nube, datos e inteligencia artificial de AWS, listos para llevar sus proyectos al siguiente nivel.</p>
       </div>
       <div class="badges-grid">
-        <img src="badges/cloud-practitioner.png" alt="AWS Cloud Practitioner" loading="lazy">
-        <img src="badges/ai-practitioner.png" alt="AI Practitioner" loading="lazy">
-        <img src="badges/dev-associate.png" alt="AWS Developer" loading="lazy">
-        <img src="badges/sa-associate.png" alt="AWS Solutions Architect" loading="lazy">
-        <img src="badges/sa-professional.png" alt="AWS Professional" loading="lazy">
-        <img src="badges/database-specialty.png" alt="AWS Database" loading="lazy">
+        <img src="badges/cloud-practitioner.png" alt="AWS Cloud Practitioner" loading="lazy" />
+        <img src="badges/ai-practitioner.png" alt="AI Practitioner" loading="lazy" />
+        <img src="badges/dev-associate.png" alt="AWS Developer" loading="lazy" />
+        <img src="badges/sa-associate.png" alt="AWS Solutions Architect" loading="lazy" />
+        <img src="badges/sa-professional.png" alt="AWS Professional" loading="lazy" />
+        <img src="badges/database-specialty.png" alt="AWS Database" loading="lazy" />
       </div>
     </section>
 
-    <!-- === NUEVO: CLIENTES (Imagen 3) === -->
+    <!-- CLIENTES -->
     <section class="clients-section">
       <div class="section-header">
         <p class="eyebrow">NUESTROS CLIENTES</p>
@@ -201,96 +210,102 @@
         <p>Acompañamos a organizaciones de distintas industrias a migrar, operar y evolucionar sus entornos en la nube con soluciones a la medida.</p>
       </div>
       <div class="clients-logos">
-        <img src="assets/fibra-shop.png" alt="FIBRA SHOP" loading="lazy">
-        <img src="assets/fibratel.png" alt="fibratel" loading="lazy">
-        <img src="assets/grupo-sistemas.png" alt="Grupo Sistemas" loading="lazy">
-        <img src="assets/link2loyalty.png" alt="Link" loading="lazy">
-        <img src="assets/concretos-tecnicos.png" alt="Link" loading="lazy">
-
+        <img src="assets/fibra-shop.png" alt="FIBRA SHOP" loading="lazy" />
+        <img src="assets/fibratel.png" alt="Fibratel" loading="lazy" />
+        <img src="assets/grupo-sistemas.png" alt="Grupo Sistemas" loading="lazy" />
+        <img src="assets/link2loyalty.png" alt="Link2Loyalty" loading="lazy" />
+        <img src="assets/concretos-tecnicos.png" alt="Concretos Técnicos" loading="lazy" />
       </div>
     </section>
 
-    <!-- === NUEVO: NUESTRA META (Imagen 4) === -->
-<section class="solutions-section">
-  <div class="section-header">
-      <p class="eyebrow">NUESTRA META</p>
-      <h2>Convertirnos en tu aliado estratégico</h2>
-      <p>Con más de 10 años de experiencia ayudamos a las empresas a tomar decisiones basadas en datos, infraestructura confiable y automatización inteligente.</p>
-  </div>
-  <div class="solutions-grid">
-      <article class="card tilt">
+    <!-- NUESTRA META -->
+    <section class="solutions-section">
+      <div class="section-header">
+        <p class="eyebrow">NUESTRA META</p>
+        <h2>Convertirnos en tu aliado estratégico</h2>
+        <p>Con más de 10 años de experiencia ayudamos a las empresas a tomar decisiones basadas en datos, infraestructura confiable y automatización inteligente.</p>
+      </div>
+
+      <div class="solutions-grid">
+        <article class="card tilt">
           <div class="solution-icon">
-              <img src="icons/Windows_AWZ.png" alt="Windows en AWS" loading="lazy">
+            <img src="icons/Windows_AWZ.png" alt="Windows en AWS" loading="lazy" />
           </div>
           <h3>Windows en AWS</h3>
           <p>Migra tus cargas Microsoft a una infraestructura flexible, segura y con pago por uso.</p>
-          <a class="btn ghost" href="https://sipser.com.mx/Mkt/LandinPage/index-aws.html" target="_blank">Ver solución →</a>
-      </article>
-      <article class="card tilt">
+          <a class="btn ghost" href="https://sipser.com.mx/Mkt/LandinPage/index-aws.html" target="_blank" rel="noopener">Ver solución →</a>
+        </article>
+
+        <article class="card tilt">
           <div class="solution-icon">
-              <img src="icons/Amazon_Glue.png" alt="AWS Glue" loading="lazy">
+            <img src="icons/Amazon_Glue.png" alt="AWS Glue" loading="lazy" />
           </div>
           <h3>AWS Glue</h3>
           <p>Limpia, transforma y prepara tus datos para análisis de manera automatizada.</p>
-          <a class="btn ghost" href="https://sipser.com.mx/Mkt/LandingPage3/index.html" target="_blank">Ver solución →</a>
-      </article>
-      <article class="card tilt">
+          <a class="btn ghost" href="https://sipser.com.mx/Mkt/LandingPage3/index.html" target="_blank" rel="noopener">Ver solución →</a>
+        </article>
+
+        <article class="card tilt">
           <div class="solution-icon">
-              <img src="icons/Amazon_RDS.png" alt="Amazon RDS" loading="lazy">
+            <img src="icons/Amazon_RDS.png" alt="Amazon RDS" loading="lazy" />
           </div>
           <h3>Amazon RDS</h3>
           <p>Administra tus bases de datos sin fricción, con alta disponibilidad y respaldo automatizado.</p>
-          <a class="btn ghost" href="https://sipser.com.mx/Mkt/LandinPage2/index-AmazonRDS.html" target="_blank">Ver solución →</a>
-      </article>
-      <article class="card tilt">
+          <a class="btn ghost" href="https://sipser.com.mx/Mkt/LandinPage2/index-AmazonRDS.html" target="_blank" rel="noopener">Ver solución →</a>
+        </article>
+
+        <article class="card tilt">
           <div class="solution-icon">
-              <img src="icons/Windows_Quicksight.png" alt="Amazon QuickSight" loading="lazy">
+            <img src="icons/Windows_Quicksight.png" alt="Amazon QuickSight" loading="lazy" />
           </div>
           <h3>Amazon QuickSight</h3>
           <p>Crea dashboards interactivos y comparte insights con toda la organización.</p>
-          <a class="btn ghost" href="https://sipser.com.mx/Mkt/LandingPage4/index.html" target="_blank">Ver solución →</a>
-      </article>
-  </div>
-</section>
+          <a class="btn ghost" href="https://sipser.com.mx/Mkt/LandingPage4/index.html" target="_blank" rel="noopener">Ver solución →</a>
+        </article>
+      </div>
+    </section>
 
-    <!-- === NUEVO: EVOLUCIONA (Imagen 5) === -->
-<section class="evolve-section">
-  <div class="section-header">
-      <h2>EVOLUCIONA CON LAS NUEVAS TECNOLOGÍAS</h2>
-      <p>Te acompañamos en cada etapa para acelerar tu transformación digital.</p>
-  </div>
-  <div class="features-grid">
-      <article class="feature-card">
+    <!-- EVOLUCIONA -->
+    <section class="evolve-section">
+      <div class="section-header">
+        <h2>EVOLUCIONA CON LAS NUEVAS TECNOLOGÍAS</h2>
+        <p>Te acompañamos en cada etapa para acelerar tu transformación digital.</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
           <div class="feature-icon">
-              <img src="icons/flecha-hacia-arriba.png" alt="Impulso competitivo" loading="lazy">
+            <img src="icons/flecha-hacia-arriba.png" alt="Impulso competitivo" loading="lazy" />
           </div>
           <h3>Impulso a tu competitividad</h3>
           <p>Convertimos tecnología en una ventaja real.</p>
-      </article>
-      <article class="feature-card">
+        </article>
+
+        <article class="feature-card">
           <div class="feature-icon">
-              <img src="icons/analitica.png" alt="Visión estratégica" loading="lazy">
+            <img src="icons/analitica.png" alt="Visión estratégica" loading="lazy" />
           </div>
           <h3>Visión estratégica</h3>
           <p>Transformamos datos en decisiones inteligentes.</p>
-      </article>
-      <article class="feature-card">
+        </article>
+
+        <article class="feature-card">
           <div class="feature-icon">
-              <img src="icons/presupuesto.png" alt="Optimización de costos" loading="lazy">
+            <img src="icons/presupuesto.png" alt="Optimización de costos" loading="lazy" />
           </div>
           <h3>Optimización de costos</h3>
           <p>Haz más con menos, manteniendo calidad y escala.</p>
-      </article>
-      <article class="feature-card">
+        </article>
+
+        <article class="feature-card">
           <div class="feature-icon">
-              <img src="icons/automatizacion.png" alt="Eficiencia y productividad" loading="lazy">
+            <img src="icons/automatizacion.png" alt="Eficiencia y productividad" loading="lazy" />
           </div>
           <h3>Eficiencia y productividad</h3>
           <p>Automatizamos procesos clave de tu operación.</p>
-      </article>
-  </div>
-</section>
-
+        </article>
+      </div>
+    </section>
 
     <!-- EXPERIENCE SECTION -->
     <section class="home-experience">
@@ -298,6 +313,7 @@
         <p class="eyebrow">Experiencia inmersiva</p>
         <h2>Programas que combinan estrategia, producto y operación</h2>
       </div>
+
       <div class="card-grid">
         <article class="card tilt" data-color="cyan">
           <h3>Launch Weeks</h3>
@@ -308,6 +324,7 @@
             <li>Roadmap de adopción</li>
           </ul>
         </article>
+
         <article class="card tilt" data-color="violet">
           <h3>Industry Pods</h3>
           <p>Equipos dedicados por industria con rituales y tableros hechos a medida.</p>
@@ -317,6 +334,7 @@
             <li>FinOps neuro adaptativo</li>
           </ul>
         </article>
+
         <article class="card tilt" data-color="pink">
           <h3>TrustOps Lab</h3>
           <p>Simulaciones purple team, respuesta autónoma y cumplimiento continuo.</p>
@@ -336,6 +354,7 @@
         <h2>Active un Discovery Session y diseñemos el siguiente salto</h2>
         <p>Blueprint personalizado, assessment FinOps y propuesta de laboratorio generativo sin costo inicial.</p>
       </div>
+
       <div class="hero-cta">
         <a class="btn primary" href="contacto.html">Agenda discovery</a>
         <a class="btn ghost" href="contenido.html">Explorar contenido</a>
@@ -362,22 +381,22 @@
   </footer>
 
   <!-- Botón flotante de WhatsApp -->
-  <a href="https://wa.me/5215555555555" 
-    class="whatsapp-float" 
-    target="_blank" 
+  <a
+    href="https://wa.me/5215555555555"
+    class="whatsapp-float"
+    target="_blank"
     rel="noopener"
-    aria-label="Chat por WhatsApp">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M12 2C6.48 2 2 6.48 2 12C2 14.9 3.2 17.43 5.11 19.27L4.5 21.5L6.73 20.89C8.57 22.8 11.1 24 14 24C19.52 24 24 19.52 24 14C24 8.48 19.52 4 14 4H12V2ZM7.6 17.11C7.06 16.57 7.06 15.63 7.6 15.09L9.22 13.47C9.76 12.93 10.7 12.93 11.24 13.47L12.86 15.09C13.4 15.63 13.4 16.57 12.86 17.11L11.24 18.73C10.7 19.27 9.76 19.27 9.22 18.73L7.6 17.11ZM16.38 10.88C16.92 11.42 16.92 12.36 16.38 12.9L14.76 14.52C14.22 15.06 13.28 15.06 12.74 14.52L11.12 12.9C10.58 12.36 10.58 11.42 11.12 10.88L12.74 9.26C13.28 8.72 14.22 8.72 14.76 9.26L16.38 10.88Z" fill="white"/>
+    aria-label="Chat por WhatsApp"
+  >
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 2C6.48 2 2 6.48 2 12C2 14.9 3.2 17.43 5.11 19.27L4.5 21.5L6.73 20.89C8.57 22.8 11.1 24 14 24C19.52 24 24 19.52 24 14C24 8.48 19.52 4 14 4H12V2Z" fill="white"/>
     </svg>
   </a>
 
+  <!-- Scripts -->
   <script src="main.js" defer></script>
-
-    <body data-cms-page="inicio">
-
-  <!-- CMS Content Loader -->
   <script src="js/cms-loader.js" defer></script>
+
   <script>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
