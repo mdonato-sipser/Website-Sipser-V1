@@ -1,5 +1,5 @@
 /* ============================================
-   SIPSER CLOUD - MAIN.JS (ESTABLE)
+   SIPSER CLOUD - MAIN.JS (ESTABLE + REVISADO)
    ============================================ */
 
 console.log("🎯 SIPSER Cloud - Iniciando sistema...");
@@ -47,7 +47,6 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
     const logos = $$(".brand img, .hero-logo");
     const newLogo = mode === "dark" ? "icons/SIPSER-logo.png" : "icons/SIPSER.png";
     logos.forEach((img) => {
-      // evita asignaciones repetitivas
       const current = img.getAttribute("src") || "";
       if (current !== newLogo) img.setAttribute("src", newLogo);
     });
@@ -63,6 +62,9 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
     toggle.addEventListener("click", () => {
       const next = body.dataset.theme === "dark" ? "light" : "dark";
       setTheme(next);
+
+      // Si existe universo, lo dejamos como "best effort":
+      // (si quieres que cambie de color al vuelo, dime y lo hacemos con una instancia global)
     });
   }
 
@@ -71,6 +73,11 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
   // ============================================
   function initNav() {
     const currentPage = getCurrentPage();
+    const nav = $("nav");
+
+    // Limpia activos previos (evita 2 "active" si el HTML lo trae hardcodeado)
+    $$("nav a[data-page]").forEach((link) => link.classList.remove("active"));
+
     if (currentPage) {
       $$("nav a[data-page]").forEach((link) => {
         if (link.dataset.page === currentPage) link.classList.add("active");
@@ -78,7 +85,6 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
     }
 
     const burger = $(".burger");
-    const nav = $("nav");
     if (burger && nav) {
       burger.addEventListener("click", () => nav.classList.toggle("open"));
     }
@@ -150,15 +156,19 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
     let h = (canvas.height = contenedor.clientHeight);
 
     const particulas = [];
+    const mkColor = () =>
+      body.dataset.theme === "dark"
+        ? "rgba(100,200,255,0.6)"
+        : "rgba(70,130,200,0.4)";
+
     for (let i = 0; i < 50; i++) {
-      const isDark = body.dataset.theme === "dark";
       particulas.push({
         x: Math.random() * w,
         y: Math.random() * h,
         size: Math.random() * 1.5 + 0.5,
         vx: (Math.random() - 0.1) * 0.7,
         vy: (Math.random() - 0.1) * 0.7,
-        color: isDark ? "rgba(100,200,255,0.6)" : "rgba(70,130,200,0.4)",
+        color: mkColor(),
       });
     }
 
@@ -167,9 +177,10 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
     function animar() {
       if (!animando) return;
 
-      ctx.fillStyle = body.dataset.theme === "dark"
-        ? "rgba(10,15,35,0.02)"
-        : "rgba(240,245,255,0.02)";
+      ctx.fillStyle =
+        body.dataset.theme === "dark"
+          ? "rgba(10,15,35,0.02)"
+          : "rgba(240,245,255,0.02)";
       ctx.fillRect(0, 0, w, h);
 
       for (const p of particulas) {
@@ -177,6 +188,9 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
         p.y += p.vy;
         if (p.x <= 0 || p.x >= w) p.vx *= -1;
         if (p.y <= 0 || p.y >= h) p.vy *= -1;
+
+        // “best effort”: refresca color por tema (barato)
+        p.color = mkColor();
 
         ctx.fillStyle = p.color;
         ctx.beginPath();
@@ -219,15 +233,12 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
     const closeBtn = $(".modal-close");
     const knowMoreBtns = $$(".know-more-btn");
 
-    if (!modalOverlay || !modalContent || !closeBtn || !knowMoreBtns.length) {
-      return; // no hay modal en esta página
-    }
+    if (!modalOverlay || !modalContent || !closeBtn || !knowMoreBtns.length) return;
 
     const solutionsData = {
-      "migration": {
+      migration: {
         title: "Migración a la Nube",
-        description:
-          "Transformamos tu infraestructura tradicional en entornos cloud modernos, seguros y escalables.",
+        description: "Transformamos tu infraestructura tradicional en entornos cloud modernos, seguros y escalables.",
         features: [
           { title: "Estrategia de Migración", description: "Evaluación completa y planificación segura." },
           { title: "Modernización", description: "Refactorización y containerización cloud-native." },
@@ -236,10 +247,9 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
         ],
         ctaText: "Iniciar Migración",
       },
-      "continuity": {
+      continuity: {
         title: "Continuidad de Negocio",
-        description:
-          "Protegemos tu operación 24/7 con DRP, alta disponibilidad y planes probados.",
+        description: "Protegemos tu operación 24/7 con DRP, alta disponibilidad y planes probados.",
         features: [
           { title: "Disaster Recovery", description: "RTO/RPO acordes al negocio." },
           { title: "Alta Disponibilidad", description: "Redundancia y balanceo de carga." },
@@ -250,8 +260,7 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
       },
       "data-engineering": {
         title: "Ingeniería de Datos",
-        description:
-          "Construimos pipelines robustos para transformar datos en insights accionables.",
+        description: "Construimos pipelines robustos para transformar datos en insights accionables.",
         features: [
           { title: "Data Pipelines", description: "ETL/ELT automatizado." },
           { title: "Data Quality", description: "Validación, limpieza, gobernanza." },
@@ -262,8 +271,7 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
       },
       "machine-learning": {
         title: "Machine Learning",
-        description:
-          "Modelos de IA para automatizar, predecir y optimizar decisiones.",
+        description: "Modelos de IA para automatizar, predecir y optimizar decisiones.",
         features: [
           { title: "Predictivo", description: "Forecast, clasificación, recomendación." },
           { title: "MLOps", description: "Deploy + monitoreo continuo." },
@@ -272,10 +280,9 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
         ],
         ctaText: "Implementar IA",
       },
-      "infrastructure": {
+      infrastructure: {
         title: "Infraestructura Cloud",
-        description:
-          "Diseñamos y operamos arquitecturas cloud nativas, seguras y escalables.",
+        description: "Diseñamos y operamos arquitecturas cloud nativas, seguras y escalables.",
         features: [
           { title: "Cloud Native", description: "Microservicios, contenedores, serverless." },
           { title: "Seguridad", description: "WAF, SIEM, Zero Trust." },
@@ -286,8 +293,7 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
       },
       "business-intelligence": {
         title: "Business Intelligence",
-        description:
-          "Dashboards y reportes ejecutivos para decisiones estratégicas.",
+        description: "Dashboards y reportes ejecutivos para decisiones estratégicas.",
         features: [
           { title: "Dashboards", description: "Drill-down y filtros real-time." },
           { title: "Reportes", description: "Distribución automatizada." },
@@ -298,12 +304,17 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
       },
     };
 
-    function openModal(solutionId) {
+    let lastTrigger = null;
+    const prevOverflow = { value: "" };
+
+    function openModal(solutionId, triggerEl = null) {
       const solution = solutionsData[solutionId];
       if (!solution) return;
 
+      lastTrigger = triggerEl || null;
+
       modalContent.innerHTML = `
-        <h2>${solution.title}</h2>
+        <h2 id="solutionModalTitle">${solution.title}</h2>
         <p class="solution-description">${solution.description}</p>
         <div class="solution-features">
           ${solution.features
@@ -326,18 +337,30 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
       `;
 
       modalOverlay.classList.add("active");
+      modalOverlay.setAttribute("aria-hidden", "false");
+
+      prevOverflow.value = document.body.style.overflow;
       document.body.style.overflow = "hidden";
+
+      // Enfoque accesible
+      closeBtn.focus({ preventScroll: true });
     }
 
     function closeModal() {
       modalOverlay.classList.remove("active");
-      document.body.style.overflow = "auto";
+      modalOverlay.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = prevOverflow.value || "auto";
+
+      // Regresa foco al botón que abrió
+      if (lastTrigger && typeof lastTrigger.focus === "function") {
+        lastTrigger.focus({ preventScroll: true });
+      }
     }
 
     knowMoreBtns.forEach((btn) => {
       btn.addEventListener("click", () => {
         const solutionId = btn.getAttribute("data-modal");
-        openModal(solutionId);
+        openModal(solutionId, btn);
       });
     });
 
@@ -351,6 +374,9 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
         closeModal();
       }
     });
+
+    // Estado inicial ARIA
+    modalOverlay.setAttribute("aria-hidden", "true");
   }
 
   // ============================================
@@ -373,6 +399,8 @@ console.log("🎯 SIPSER Cloud - Iniciando sistema...");
       if (!res.ok) return;
 
       const data = await res.json();
+      if (!data || typeof data !== "object") return;
+
       applyCMSBindings(data);
     } catch (e) {
       console.warn("Error cargando CMS:", e);
